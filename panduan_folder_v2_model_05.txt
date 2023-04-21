@@ -1,0 +1,119 @@
+Untuk membuat tampilan seperti pada gambar di atas,
+silakan ikuti panduan berikut ini. 1. Menggunakan Layout 1 Modul yang digunakan pada menu aplikasi ini adalah modul Folder v2 (Home),
+News Wall (Article),
+Push Notification (Info),
+dan My Account (Account). Jadi,
+khusus untuk menu pada bagian footer aplikasi hanya menggunakan 4 buah modul. Catatan: Tampilan menu pada footer aplikasi telah diubah menjadi hanya 4 menu. Jika Anda ingin menggunakan lebih dari 4 menu,
+silakan hapus baris kode di bawah ini. .always .layout.l1 .tabs li {
+    min-width: 25% !important;
+}
+
+Kode di atas mengubah ukuran lebar setiap menu yang _default_nya hanya 20%. 2. Menggunakan Modul Folder v2 Tambahkan Folder v2 ke dalam aplikasi dan tempatkan modul tersebut pada urutan pertama menu bagian footer. Silakan sesuaikan namanya. Sebagai contoh,
+pada gambar di atas diberi nama Home. Selanjutnya,
+silakan tambahkan modul ke dalam Folder v2 sesuai dengan kebutuhan. Pada gambar di atas,
+modul yang ditambahkan ke Folder v2 sebanyak 14 buah. Anda dapat menyesuaikannya dengan kebutuhan. Selanjutnya,
+silakan buka Folder v2 Anda dan ikuti beberapa aturan berikut: Pada tab Folder>Manage Folders>Edit folder,
+silakan isi judul folder. Sebagai contoh,
+pada gambar di atas diberi Plantae pada kolom Title. Selanjutnya,
+silakan isi tagline aplikasi pada kolom Subtitle. Sebagai contoh adalah Never kill a plant again. Jadi,
+pada bagian tab Folder,
+yang harus diisi hanyalah Title dan Subtitle saja. Selanjutnya,
+pada tab Design,
+silakan pilih Layout 2. Pada tab Setting>Manage Folders,
+hilangkan centang pada pilihan Enable search in folders dan Use card design. Catatan: Panduan mengenai cara menggunakan Folder v2 dapat dilihat DI SINI Modul yang diisi ke dalam Folder v2 sepenuhnya menjadi hak Anda. Silakan sesuaikan dengan kebutuhan. Jika Anda menggunakan lebih dari 14 menu/modul di dalam Folder v2,
+Anda perlu menambahkan beberapa baris kode di bawah ini pada bagian akhir CSS dan melakukan beberapa perubahan.
+/* 2 menu ketujuh */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(228, 81, 255, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1564/1_atshqs);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(59, 179, 92, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1562/1_rlh7gl);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu ketujuh */
+
+Jika Anda perhatikan pada gambar di atas,
+menu-menu di dalam Folder v2 disusun berdasarkan baris. Satu baris menu berisi 2 kolom,
+yakni menu kiri dan kanan. Jadi,
+2 menu pertama merupakan 1 baris,
+2 menu kedua meruapakan 1 baris,
+dst. Oleh karena pada contoh ini kita menggunakan 14 menu,
+maka jumlah baris yang digunakan sebanyak 7. Jadi,
+jika Anda ingin menambahkan baris ke-delapan dengan 2 menu baru,
+silakan gandakan baris kode di atas dan ubah angka 7 pada .folder-layout.folder-l2 .folder-l2-row:nth-child(7) menjadi 8. Sehingga baris kode tersebut akan menjadi .folder-layout.folder-l2 .folder-l2-row:nth-child(8) Gambar yang digunakan pada menu/modul yang diisi di dalam Folder v2 adalah gambar yang ditambahkan melalui CSS. Untuk mengganti gambar yang digunakan pada CSS,
+silakan ubah link gambar yang ada pada properti background-image Panduan pembuatan warna gradasi (gradient) dapat dilihat DI SINI Selain itu,
+beberapa catatan yang harus Anda perhatikan pada penggunaan CSS ini adalah bagian header aplikasi. Header (termasuk judul) aplikasi telah dihilangkan menggunakan CSS. Untuk memunculkannya kembali,
+silakan hapus baris kode di bawah ini.
+/*  Header Title */
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+
+/* Header bar */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+CSS ini telah diunggah ke Member Area dengan nama Folder v2 - Model Beranda Aplikasi Plantae

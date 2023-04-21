@@ -1,0 +1,375 @@
+/* Skrip CSS di bawah ini hanya untuk memodifikasi tampilan modul Attendance apabila Anda hanya ingin memanfaatkan fitur chat pada modul tersebut. Tampilan hasil modifikasi dapat Anda lihat pada gambar di atas. Panduan: */
+
+
+/*
+ *---------------------------------------------------------------
+ * BUNDLE CSS MODUL ATTENDANCE - JADI CHATTING MODULE
+ *---------------------------------------------------------------
+ *
+ * Jika ingin ganti warna, ganti pada warna parameter saja.
+ * Jika ingin ganti gambar, ganti pada gambar parameter saja.
+ */
+
+
+/* HEADER */
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+.title.title-left.header-item {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.bar-custom .button.button-clear {
+    color: #fff !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header {
+    top: 20px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center {
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #638eff !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+.button.button-custom.ng-binding {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #000 !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active:after {
+    content: " ";
+    border-bottom: 2px solid #638eff !important;
+    display: block !important;
+    height: 45px !important;
+    width: 70% !important;
+    margin-left: 18%;
+}
+
+
+/* END HEADER */
+
+
+/* ATENDANCE HOME */
+
+
+/* Menjadikan attendance as an inbox module */
+
+ion-view.attendance.attendance-home[ng-if="is_logged_in && payout_data.settings.leave_enable"],
+[ng-click="showScanCamera()"],
+[ng-click="action.tab = 'attendance'"],
+[ng-click="action.tab = 'leaves'"],
+[ng-if="!is_loading && payout_data.settings.holiday_enable == 1"],
+[ng-click="attendanceHistory()"],
+.card.attendance-check-in-out-box {
+    display: none !important;
+}
+
+ion-view.attendance.attendance-home ion-content,
+ion-view.attendance.attendance-message ion-content {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    top: 0 !important;
+    padding-top: 60px;
+}
+
+ion-view.attendance.attendance-home ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url("https://i.ibb.co/D4f4s63/admin.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.attendance.attendance-home .row.check-in-out-buttons.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-message .list {
+    margin-bottom: 0;
+    padding-bottom: 100px !important;
+    margin-bottom: 100px;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-custom,
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-custom {
+    display: none;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 0 !important;
+    background: #47529e;
+    background: linear-gradient(90deg, #e91e63 0%, #ff9800 100%);
+    padding-top: 100px;
+    box-shadow: 5px 5px 5px #dfe7ff !important;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/07/tap_attendance.png);
+    background-repeat: no-repeat;
+    background-size: 101px;
+    background-position: center top 30px;
+}
+
+ion-view.attendance.attendance-home .card {
+    box-shadow: none !important;
+}
+
+ion-view.attendance.attendance-home ng-include {
+    display: block !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card.attendance-customer-box {
+    display: block;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding i.icon.ion-email {
+    display: none;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding .badge.badge-assertive-custom {
+    background-color: #638eff;
+    color: #fff;
+    position: absolute;
+    top: 3px !important;
+    right: 15px !important;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home p.location_status {
+    font-size: 0;
+    width: 0vw;
+}
+
+ion-view.attendance.attendance-home .item.item-custom.remove-border.text-center {
+    padding-top: 0;
+    background-color: transparent !important;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box .item.item-custom.remove-border {
+    background-color: transparent;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding,
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    text-align: center;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding {
+    color: #fff !important;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    font-size: 13px;
+    color: #fff;
+}
+
+ion-view.attendance.attendance-home p.location_status marquee.ng-binding {
+    font-size: 13px !important;
+    position: fixed;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom {
+    background-color: transparent !important;
+    border: 0;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding:after {
+    content: "Mulai Chat";
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    color: #2978cd !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding {
+    display: flex;
+    margin-top: 120px;
+    background-color: white;
+    padding: 17px;
+    text-align: center;
+    color: #2978cd !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 0;
+}
+
+[ng-if="is_logged_in && !is_loading && payout_data.settings.is_message_admin"]:before {
+    content: "Untuk memulai chating dengan operator, silakan klik tombol Mulai Chat di bawah ini.";
+    display: block;
+    line-height: 1.8;
+    width: 96%;
+    text-align: center;
+    margin: 0 2%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-home p.checkedin-time.text-center.ng-binding {
+    background-color: transparent;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.now-time.text-center.ng-binding {
+    background-color: transparent;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home span.clock-count.icon.icon-active-custom.ng-binding {
+    color: #638eff !important;
+}
+
+
+/* Page list chat */
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding {
+    background-color: transparent;
+    color: #fff;
+    font-size: 0;
+}
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding:after {
+    content: "History chat dengan operator";
+    font-size: 16px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right p {
+    color: #fff;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 90%;
+    margin: 10px 2% 10px 8%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+.bar.bar-stable.bar-footer {
+    background-image: none !important;
+    border: 0 !important;
+    bottom: 5rem !important;
+    width: 96%;
+    margin: 0 2%;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left p {
+    color: #fff;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left {
+    width: 90%;
+    margin: 10px 8% 10px 2%;
+    border-radius: 10px;
+    background: #000 !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/* User not login yet */
+
+ion-view.attendance.attendance-home .item.item-body.item-custom.attendance-login-button.remove-border {
+    background-color: transparent;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom:after {
+    content: "Login";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom {
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    font-size: 0;
+    width: 60%;
+    margin: 20px 20%;
+}

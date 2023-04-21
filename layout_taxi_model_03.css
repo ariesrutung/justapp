@@ -1,0 +1,70 @@
+Ikhtisar Pengaturan Referal Notifikasi Massal Artikel Detail Artikel Modifikasi Homepage Layout Taxi
+/* Layout TAXI */
+
+ion-side-menu.menu.menu-left.menu-left-open,
+ion-side-menu.menu.menu-left {
+    background-color: transparent !important;
+}
+
+.layout.layout_taxi ion-content {
+    height: 94vh;
+    margin: 2vh;
+    border-radius: 40px;
+    background-color: #fff !important;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    background-image: url(url_gambar_anda) !important;
+    /* ganti sesuai dengan kebutuhan */
+    background-position: center top !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-color: #ecf0f6;
+    border-radius: 0 0 50px 50px;
+    margin-top: -2px;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 25vw;
+    width: 25vw;
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.layout_taxi .items {
+    padding-top: 0;
+    margin-top: 30px;
+}
+
+.layout.layout_taxi ion-content:after {
+    content: "Versi 1.0";
+    display: block;
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 20px;
+    color: #0080b1;
+    font-size: 11px;
+}
+
+.layout_taxi .line-title {
+    font-weight: bold !important;
+    font-variant: normal !important;
+}
+
+.layout_taxi span.pull-left.customer-name.ng-binding {
+    font-size: 14px;
+    font-variant: none;
+    text-transform: uppercase !important;
+    font-weight: bold;
+}
+
+
+/* Jika ingin menghilangkan menu My Account yang letaknya di posisi ketiga */
+
+li#feature-3 {
+    display: none;
+}

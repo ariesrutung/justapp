@@ -1,0 +1,51 @@
+/* FORM */
+
+.module-form2.form2.form2-home.form2-home-l1 ion-item:nth-of-type(1) p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label {
+    display: inline-block;
+    width: 100%;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label input,
+.module-form2.form2.form2-home.form2-home-l1 label textarea {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -.5%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label.item-select.form2-select {
+    width: 96%;
+    margin: 0 .5% 0 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .button.button-positive-custom {
+    width: 30%;
+    margin-left: 35%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #18bd5b;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .input-label {
+    width: 100% !important;
+    display: block;
+    margin: 0;
+}
+
+img.form2-illustration {
+    width: 96% !important;
+    border-radius: 5px;
+    margin-left: 2%;
+}

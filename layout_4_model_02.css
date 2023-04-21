@@ -1,0 +1,103 @@
+/* Catatan: Tinggi slider adalah 30%. Jika ingin mengurangi atas menambah,
+pastikan Anda mengubah juga height pada .layout.l4 ion-content di skrip CSS di bawah ini. */
+
+
+/* LAYOUT 4 */
+
+ion-view[state="home"] {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+.layout.l4 ion-content {
+    position: absolute;
+    width: 100vw;
+    height: 56vh;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 0;
+    top: initial;
+}
+
+
+/* slider patger */
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 40vh !important;
+    margin-top: 2% !important;
+    opacity: 1 !important;
+    border-radius: 10px !important;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.slider-pager.hide {
+    display: inline !important;
+    top: 35% !important;
+    text-align: left;
+    left: 20px;
+}
+
+.slider-pager.hide span.slider-pager-page {
+    width: 15px !important;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.slider-pager.hide span.slider-pager-page.active {
+    width: 35px !important;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.slider-pager.hide span i {
+    font-size: 0 !important;
+}
+
+
+/* menu */
+
+.layout.l4 ul {
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    left: 0;
+    right: 0;
+}
+
+.layout.l4 li {
+    float: left;
+    width: 30%;
+    height: 110px;
+    margin: 10px 1.6%;
+    padding: 0;
+    border-radius: 10px;
+    border: 0 !important;
+    background: #60a663;
+    background: linear-gradient(90deg, rgba(96, 166, 99, 1) 0%, rgba(85, 127, 84, 1) 100%) !important;
+}
+
+.layout.l4 li .items {
+    position: relative;
+    height: 11vh;
+    padding: 15px;
+    border-radius: 11vh;
+    border-width: 3px;
+    border-style: solid;
+    width: 11vh;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 0;
+}
+
+.layout.l4 li p {
+    text-transform: uppercase;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #fff;
+}

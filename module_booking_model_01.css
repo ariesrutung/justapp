@@ -1,0 +1,149 @@
+Ikhtisar Pengaturan Referal Notifikasi Massal Artikel Detail Artikel Modifikasi Booking
+/* BOOKING */
+
+ion-view.booking-view.booking-view-l1 ion-content {
+    background-color: #fff !important;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list img {
+    width: 80% !important;
+    padding: 10px;
+    margin: 20px 10%;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list [ng-if="settings.description"] {
+    border-left: 9px solid #707070 !important;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: -130px;
+    background-color: hsl(0deg 0% 0% / 53%) !important;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(2) .item.item-divider.item-divider-custom.ng-binding {
+    font-weight: bold;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(2) label {
+    display: inline-block;
+    width: 100%;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(2) label i {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(2) label input {
+    width: 96%;
+    display: block;
+    max-width: 96%;
+    border: 2px solid #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left !important;
+}
+
+i.icon.ion-person:after {
+    content: "Nama";
+    margin-left: 5px;
+}
+
+i.icon.ion-ios-telephone:after {
+    content: "Nomor HP/WA";
+    margin-left: 5px;
+}
+
+i.icon.ion-email:after {
+    content: "Email Aktif";
+    margin-left: 5px;
+}
+
+i.icon.ion-ios-people:after {
+    content: "Jumlah Pesanan";
+    margin-left: 5px;
+}
+
+[model="formData.checkIn"] i.icon.ion-ios-clock:after {
+    content: "Tanggal Pesan";
+    margin-left: 5px;
+}
+
+[model="formData.checkOut"] i.icon.ion-ios-clock:after {
+    content: "Tanggal Antar";
+    margin-left: 5px;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(2) .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(3) .item.item-divider.item-divider-custom.ng-binding {
+    font-weight: bold;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(3) label textarea {
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 10px;
+    width: 96%;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(4) .item.item-divider.item-divider-custom.ng-binding {
+    font-weight: bold;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content form .list:nth-child(4) label textarea {
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 10px;
+    width: 96%;
+}
+
+
+/* placeholder */
+
+ion-view.booking-view.booking-view-l1 form input::-webkit-input-placeholder {
+    color: #284778 !important;
+    visibility: hidden;
+}
+
+ion-view.booking-view.booking-view-l1 form input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #284778 !important;
+    visibility: hidden;
+}
+
+ion-view.booking-view.booking-view-l1 form input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #284778 !important;
+    visibility: hidden;
+}
+
+ion-view.booking-view.booking-view-l1 form input:-ms-input-placeholder {
+    color: #284778 !important;
+    visibility: hidden;
+}
+
+
+/* placeholder */
+
+ion-view.booking-view.booking-view-l1 .button.button-positive-custom {
+    border: 0;
+    background-color: #ffc850;
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}

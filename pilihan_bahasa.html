@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dropdown Pilihan Bahasa</title>
+
+    <style>
+        * Style untuk dropdown */ .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Style untuk kelas aktif */
+        
+        .active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Pilih Bahasa</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="setLanguage('id')">Bahasa Indonesia</a>
+            <a href="#" onclick="setLanguage('en')">English</a>
+            <a href="#" onclick="setLanguage('es')">Español</a>
+        </div>
+    </div>
+
+    <p id="greeting">Selamat datang!</p>
+
+
+    <script>
+        function setLanguage(lang) {
+            // Mengambil semua link di dropdown
+            var links = document.querySelectorAll(".dropdown-content a");
+
+            // Menghapus kelas aktif dari semua link
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove("active");
+            }
+
+            // Menambahkan kelas aktif ke link yang dipilih
+            event.target.classList.add("active");
+
+            // Menampilkan pesan sesuai bahasa yang dipilih
+            var greeting = document.getElementById("greeting");
+            switch (lang) {
+                case "id":
+                    greeting.innerHTML = "Selamat datang!";
+                    break;
+                case "en":
+                    greeting.innerHTML = "Welcome!";
+                    break;
+                case "es":
+                    greeting.innerHTML = "¡Bienvenido!";
+                    break;
+                default:
+                    greeting.innerHTML = "Selamat datang!";
+            }
+        }
+    </script>
+</body>
+
+
+</html>

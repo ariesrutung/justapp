@@ -1,0 +1,84 @@
+Catatan: We are your best travel agency ditambahkan pada kolom Let your users know what is locked pada modul Padlock ion-view.padlock-view {
+    background-image: url(https://cdn.britannica.com/30/123030-050-65C3E210/Pavilion-Xi-Lake-Hangzhou-Zhejiang-China-province.jpg) !important;
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999 !important;
+}
+
+ion-view.padlock-view.pane.has-background-image ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.padlock-view .card.padlock {
+    box-shadow: none;
+    margin-top: 40vh;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom.active,
+ion-view.padlock-view .card.padlock .item.item-custom:active {
+    border: 0;
+    background-color: transparent !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding:after {
+    content: "Let's explore the world together";
+    font-size: 33px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding {
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom {
+    padding: 10px 10px 20px 10px !important;
+    text-align: center;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom i.icon.ion-ios-paper-outline,
+ion-view.padlock-view .item.item-icon-left.item-custom.ng-binding i.icon.ion-ios-person-outline {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom span.ng-binding {
+    font-size: 16px !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    padding: 10px !important;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Get Started";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    background-color: #f94560;
+    width: 60% !important;
+    margin-left: 20%;
+    border-radius: 10px;
+    color: #fff;
+}

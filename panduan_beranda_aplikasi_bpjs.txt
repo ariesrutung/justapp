@@ -1,0 +1,253 @@
+Tampilan beranda aplikasi BPJS Ketenagakerjaan di atas adalah desain ulang aplikasi aslinya menggunakan modul Custom Page. Jika Anda ingin membuat tampilan serupa (seperti gambar di atas),
+silakan simak langkah-langkah di bawah ini. Tambahkan modul Custom Page,
+pilih Text pada bagian Add sections. Text pertama akan menampilkan logo aplikasi (sebelah kiri) dan ikon notifikasi (sebelah kanan). Kedua item tesebut akan ditambahkan internal link. Logo aplikasi akan disisipi link menuju beranda dan ikon notifikasi disisipi link menuju modul Push Notification. Caranya,
+kopi baris kode di bawah ini dan tempatkan ke dalam box Text dengan terlebih dahulu menekan button Source. Jangan lupa untuk mengganti masing-masing link sesuai dengan kebutuhan. <p><a data-offline="true" data-params="value_id:212725" data-state="push-list">Info</a><a data-offline="true" data-params="value_id:212725" data-state="push-list">Info</a></p>Text ke dua akan menampilkan judul untuk menu Jaminan Hari Tua,
+Jaminan Kecelakaan Kerja,
+dan Program Lainnya. Caranya,
+kopi baris kode di bawah ini dan tempatkan ke dalam box Text dengan terlebih dahulu menekan button Source. <h2><strong>Program Layanan</strong></h2>Text ke tiga dan keempat secara berturut-turut akan membuat button Jaminan Hari Tua dan Jaminan Kecelakaan Kerja. Kedua button ini akan dilengkapi gambar/ikon. Untuk menambahkan gambar,
+silakan klik ikon gambar yang ada di dalam box Text. Perhatikan gambar di bawah ini.
+/* Text Ke tiga */
+
+<p><a data-offline="true" data-params="value_id:192923" data-state="cms-view">Jaminan Hari Tua</a></p>
+/* Text Ke empat */
+
+<p><a data-offline="true" data-params="value_id:192923" data-state="cms-view">Jaminan Kecelakaan Kerja</a></p>Text kelima berisi tombol aktif yang ketika diklik akan di arahkan ke modul tertentu. Untuk modul tujuannya,
+silakan Anda sesuaikan dengan kebutuhan. Kopi baris kode di bawah ini. <p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Program Lainnya</a></p>Text ke enam akan menampilkan judul untuk layanan yang ada pada Text ketujuh dan kedelapan. Bagian ini sama dengan Text ketiga di atas. Text ke tujuh dan ke delapan menampilkan daftar menu sebanyak 2 baris 4 kolom. Isi menu-menu dan _link_nya sesuai kebutuhan.
+/* Text Ketujuh */
+
+<p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Iuran</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Promo</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Update Data</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Mitra</a></p>
+/* Text Ke delapan */
+
+<p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Info Program</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Pelaporan</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Kantor Cabang</a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list">Pengaduan</a></p>Text ke sembilan menampilkan judul untuk Text ke sepuluh. bagian ini sama seperti Text 3 dan 6. <h2><strong>Promo</strong></h2>Text ke sepuluh menampilkan slider card yang bisa digulung ke kiri dan kanan. Silakan kopi baris kode di bawah ini.
+/* Text ke sepuluh */
+
+<p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list"><span>IuranLipsum adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis.</span></a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list"><span>PromoLipsum adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis.</span></a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list"><span>Update DataLipsum adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis.</span></a></p><p><a data-offline="true" data-params="value_id:213757" data-state="folder2-category-list"><span>MitraLipsum adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis.</span></a></p>Catatan: Pastikan mengikuti panduan di atas. Jumlah blok Text dan isinya harus disesuaikan. Cek CSS yang digunakan pada beranda ini di Member Area masing-masing Untuk mengganti gambar atau ikon yang digunakan pada beranda,
+silakan ganti link gambar yang ada pada baris kode di bawah ini. Ikon BPJS Ketenagakerjaan ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text p a:nth-child(1) {
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/images/logo-bpjamsostek-color.svg);
+    background-position: center left -5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent !important;
+    height: 50px;
+    width: 43%;
+}
+
+Ikon Notifikasi ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text p a:nth-child(2) {
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/notifications-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    color: transparent !important;
+    height: 40px;
+    width: 40px;
+    background-color: #ecf0f6;
+    border-radius: 10px;
+}
+
+Ikon Program Lainnya ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(7) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 10px 0;
+    background-color: #ebf7f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/arrow-forward-outline.svg);
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+Ikon Layanan Lainnya secara berturut-turut ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-8.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-7.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-6.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(4) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-5.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-4.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-3.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-2.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(4) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-1.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+Background Card Slider Promo secara berturut-turut ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(1) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_Artboard_22-100.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(2) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_JKP_Banner_Besar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(3) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_Artboard_77@2x-100.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(4) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #ebf7f3;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_banner_hd_Artboard_25_3-100.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}

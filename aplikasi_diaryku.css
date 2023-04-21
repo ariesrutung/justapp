@@ -1,0 +1,665 @@
+/* Aplikasi DiaryKu */
+
+
+/* Catatan penting untuk diikuti:
+
+Menggunakan Layout Taxi
+Menggunakan modul Form v2, Padlock, My Account, dan Push Notification
+Field atau Section yang digunakan pada Form v2 secara berturut-turut sesuai dengan gambar di atas hanya Text Input, Textarea, Title (section, divider), Geolocation (GPS, georeverse), Date & time, dan Pictures (image).
+Tempatkan CSS di bawah ini di tab Colors - Advanced Customization CSS/SCSS pada builder Anda */
+
+button[ng-show="showLeftButton()"] i.icon.ion-navicon-round {
+    color: transparent;
+    background-image: url(https://justapp.id/assets/images/toggler_icon.svg);
+    background-position: center center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+.layout.layout_taxi ion-content {
+    background-color: #fff !important;
+    height: 96vh;
+    margin: 2vh 0 2vh 2vh;
+    border-radius: 30px;
+    border-top: 10px solid #ecf0f6;
+}
+
+ion-side-menu.menu.menu-left,
+ion-side-menu.menu.menu-left.menu-left-open {
+    background-color: transparent !important;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    background: none !important;
+    background-position: center right -30px !important;
+    background-size: 44% !important;
+    background-repeat: no-repeat !important;
+    border-bottom: 2px solid #8cdc52 !important;
+    background-color: #ecf0f6 !important;
+    top: 0;
+    margin-top: -3px;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin-left: 1em;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 13px;
+    color: #000;
+}
+
+.layout_taxi li {
+    height: 60px !important;
+}
+
+.layout_taxi .customer-name {
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase !important;
+    color: #000;
+    font-weight: bold;
+}
+
+span[ng-click="showPrivacyPolicy()"],
+div[ng-click="requestGdprToken()"] {
+    color: #000 !important;
+    font-size: 11px;
+    text-align: right;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;
+    padding-top: 20px;
+    border-top: 15px solid #fff;
+    margin-top: 5px;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;
+    padding-top: 20px;
+    border-top: 15px solid #fff;
+    margin-top: 5px;
+}
+
+.layout_taxi ul:after {
+    content: "Versi: 1.5";
+    display: block;
+    width: 100%;
+    color: #000;
+    margin-top: 0;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 12px;
+    background-color: #fff !important;
+    padding-top: 60px;
+}
+
+.layout_taxi li:nth-child(1) {
+    border-radius: 50px 0 0 0;
+}
+
+.layout_taxi li {
+    height: 60px !important;
+    background-color: #fff !important;
+    padding-top: 40px;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    background: none !important;
+    background-position: center right -30px !important;
+    background-size: 44% !important;
+    background-repeat: no-repeat !important;
+    border: 0 !important;
+    background-color: #ecf0f6 !important;
+    top: 0;
+    margin-top: -3px;
+    height: 200px;
+    border-radius: 0 0 50px 0;
+}
+
+.layout_taxi ul {
+    margin-top: 0;
+    background: rgb(236, 240, 246);
+    background: linear-gradient(90deg, rgba(236, 240, 246, 1) 49%, rgba(255, 255, 255, 1) 49%) !important;
+    padding-top: 0 !important;
+}
+
+.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+    background-color: transparent !important;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    border: 4px solid #fff;
+}
+
+.header-main-wapper,
+.site-header {
+    display: none;
+}
+
+.bar-custom .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 16px;
+}
+
+ion-view.padlock-view {
+    background-image: url(https://cdn.britannica.com/30/123030-050-65C3E210/Pavilion-Xi-Lake-Hangzhou-Zhejiang-China-province.jpg) !important;
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999 !important;
+}
+
+ion-view.padlock-view.pane.has-background-image ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.padlock-view .card.padlock {
+    box-shadow: none;
+    margin-top: 40vh;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom.active,
+ion-view.padlock-view .card.padlock .item.item-custom:active {
+    border: 0;
+    background-color: transparent !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding:after {
+    content: "Let's explore the world together";
+    font-size: 33px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding {
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom {
+    padding: 10px 10px 20px 10px !important;
+    text-align: center;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom i.icon.ion-ios-paper-outline,
+ion-view.padlock-view .item.item-icon-left.item-custom.ng-binding i.icon.ion-ios-person-outline {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom span.ng-binding {
+    font-size: 16px !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    padding: 10px !important;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Get Started";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    background-color: #f94560;
+    width: 60% !important;
+    margin-left: 20%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent;
+}
+
+.bar.bar-custom .title {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 {
+    background: #fff !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-content {
+    background-color: #fff !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card {
+    margin: 0;
+    padding: 0;
+    background-color: #fff !important;
+    box-shadow: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.form2-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .button.button-positive-custom {
+    border: 0;
+    background-color: #8dd078;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 input:before,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .checkbox-icon:before {
+    border-color: #8dd078 !important;
+    background: transparent !important;
+    border-radius: 5px !important;
+    border: 2px solid #8dd078 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 input:checked:before,
+ion-view.module-form2.form2.form2-home.form2-home-l1 input:checked+.checkbox-icon:before {
+    background: #8dd078 !important;
+    border: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 input:checked:after,
+ion-view.module-form2.form2.form2-home.form2-home-l1 input:checked+.checkbox-icon:after {
+    border-color: #fff;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.form2-text .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.form2-text input {
+    max-height: 60px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.item-stacked-label.form2-textarea {
+    background-color: #fff !important;
+    padding: 0;
+    margin: 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.item-stacked-label.form2-textarea .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 label.item.item-input.item-custom.item-stacked-label.form2-textarea textarea {
+    font-size: 14px !important;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom {
+    border: 0;
+    background-color: #fff;
+    color: rgba(68, 68, 68, 1);
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 h2>span.ng-binding:after {
+    content: "Dapatkan lokasi otomatis";
+    font-size: 14px;
+    color: #8dd078;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 h2>span.ng-binding {
+    font-size: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-item.item-divider.item-divider-custom.form2-divider.item {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item-content.disable-pointer-events p.ng-binding {
+    font-size: 14px;
+    color: #000;
+    font-style: italic;
+    margin-top: 10px;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Gambar */
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 form2-pictures.form2-image ion-item.item-custom.upload-title.item.ng-binding {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 form2-pictures.form2-image .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 i.icon.ion-image.add-image-icon {
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    padding: 20px 0;
+    margin: 10px;
+    border: 1px dashed #8dd078 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-item.item-icon-left.item-custom.upload-action.item .col-90 i.icon.ion-image.add-image-icon {
+    margin: 20px;
+    font-size: 40px;
+    color: #8dd078;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 i.item-note.ion-plus.arrow-center {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #8dd078;
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-item.item-icon-left.item-custom.upload-action.item p.ng-binding:after {
+    content: "Klik untuk tambah gambar";
+    font-size: 16px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-item.item-icon-left.item-custom.upload-action.item p.ng-binding {
+    font-size: 0;
+}
+
+.tabs.tabs-icon-top.form2-tabs {
+    border: 0 !important;
+    box-shadow: none !important;
+    background: #ecf0f6 !important;
+    border-top-right-radius: 100% 45px;
+    border-top-left-radius: 100% 45px;
+}
+
+.tabs.tabs-icon-top.form2-tabs a[ng-click="setTab('form')"]:after {
+    content: "Catatan Baru";
+    font-size: 10px;
+    color: #000;
+}
+
+.tabs.tabs-icon-top.form2-tabs a[ng-click="setTab('form')"] {
+    font-size: 0;
+}
+
+.tabs.tabs-icon-top.form2-tabs i.icon.ion-android-list {
+    color: transparent;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/document-text-outline.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px;
+}
+
+.tabs.tabs-icon-top.form2-tabs a[ng-click="setTab('history')"] {
+    font-size: 0;
+}
+
+.tabs.tabs-icon-top.form2-tabs a[ng-click="setTab('history')"]:after {
+    content: "Daftar Catatan";
+    font-size: 10px;
+    color: #000;
+}
+
+.tabs.tabs-icon-top.form2-tabs i.icon.ion-archive {
+    color: transparent;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/folder-open-outline.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 textarea.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-touched {
+    font-size: 16px;
+    line-height: 1.5 !important;
+    background-color: #ecf0f6 !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
+
+
+/* Riwayat Form */
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal {
+    background: #fff !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    padding: 0;
+    margin: 10px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .input-label.ng-binding {
+    display: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal ion-item.item-image.item-custom.item>div>img.form2-pictures {
+    width: 100%;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 img.form2-pictures {
+    max-height: max-content;
+    width: 92%;
+    max-width: 92%;
+    margin: 6px 0;
+    border-radius: 20px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal label.item.item-input.item-custom.form2-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card {
+    padding: 0;
+    margin: 0;
+    box-shadow: none !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal label.item.item-input.item-custom.form2-text input {
+    max-height: 60px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal label.item.item-input.item-custom.item-stacked-label.form2-textarea textarea {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .item.item-divider.item-divider-custom.form2-divider {
+    display: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .item-checkbox .checkbox {
+    display: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal label.checkbox-custom.item-custom.form2-checkbox.item.item-checkbox {
+    padding: 0;
+    margin: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card:nth-child(1) label.item.item-input.item-custom.form2-text input {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card:nth-child(2) label.item.item-input.item-custom.form2-text input {
+    position: fixed;
+    top: 0;
+    right: 0 !important;
+    width: 100%;
+    text-align: right;
+    color: #8f8f8f;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal span.ng-binding,
+ion-modal-view.module-form2.form2-modal.form2-display-modal p {
+    font-size: 14px;
+}
+
+
+/* Date & Time */
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime .row .col-50 {
+    width: 100%;
+    min-width: 100%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime .row input {
+    text-align: left;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    height: 45px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime .row input {
+    text-align: left;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime i.icon.ion-clock.add-image-icon {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime {
+    padding: 0;
+    margin: 10px;
+    font-size: 14px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .item.item-custom.item-icon-left.form2-datetime p.ng-binding {
+    font-size: 14px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 [ng-if="history.length > 0"] {
+    background-color: #ecf0f6 !important;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 [ng-if="history.length > 0"] i.item-note.ion-plus.arrow-center {
+    font-size: 0;
+    margin: 0;
+    background-color: #fff !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 10px 10px 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/chevron-forward-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 [ng-if="history.length > 0"] .col-90 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px 10px 30px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/document-outline.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 [ng-if="history.length > 0"] .col-10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Import Image */
+
+.action-sheet {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+    z-index: 11;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ecf0f6;
+    border-radius: 30px;
+    margin-bottom: 25px !important;
+}
+
+.action-sheet-options {
+    background: transparent !important;
+}
+
+button.button.action-sheet-option.ng-binding {
+    border-width: 0;
+    font-size: 16px;
+}
+
+.action-sheet-group.action-sheet-cancel {
+    background-color: #8dd078 !important;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.action-sheet-group.action-sheet-cancel button.button.ng-binding {
+    color: #fff;
+    text-transform: uppercase;
+}

@@ -1,0 +1,1112 @@
+/* Silakan kopi source code ini dan tempatkan ke dalam modul Source Code. Ini dipakai untuk membuat halaman beranda. Panduan pembuatan aplikasi dan pengunaan css dan source code dapat dilihat di video berikut ini. */
+
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Homepage Aplikasi E-Learning</title>
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="IE=8" http-equiv="X-UA-Compatible">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap');
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-size: 15px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-user-select: none;
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none;
+            line-height: 1;
+            background-color: #4e80a6 !important;
+        }
+        
+        body:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 7rem;
+            background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(40%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+            background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 100%);
+        }
+        /* Call User name */
+        
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        div,
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        
+        .private {
+            display: none;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            margin: 20px auto 4px auto;
+            cursor: pointer;
+            width: 60%;
+            letter-spacing: 0.7px;
+            font-size: 14px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            color: #337ab7;
+            display: none !important;
+        }
+        
+        .button2 {
+            background-color: #008CBA;
+        }
+        
+        .button3 {
+            background-color: #f44336;
+        }
+        
+        .button5 {
+            background-color: #555555;
+        }
+        
+        div#userWelcomeInfo center {
+            color: #f25070;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: -60px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0px 10px;
+        }
+        
+        div#userWelcomeInfo h4 {
+            display: flex !important;
+            justify-content: end;
+            align-items: center !important;
+            color: #fff !important;
+            width: auto;
+            margin: 0;
+        }
+        /* End call user name */
+        
+        img#cover {
+            object-fit: cover;
+            object-position: top;
+            border-radius: 0 0 10px 10px;
+            height: 202px;
+        }
+        
+        h2 {
+            padding: 8px;
+            margin: 0;
+        }
+        
+        h4 {
+            padding: 8px;
+            margin: 0;
+            margin-bottom: 0px;
+            margin-left: 5%;
+            font-size: 15px;
+            letter-spacing: 0.7px;
+            padding-bottom: 5px;
+            padding-left: 0px;
+            margin-top: 10px;
+        }
+        
+        div.gallery img {
+            width: 45px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+            border: 0;
+            padding: 5px;
+            transform: scale(0.75);
+            padding: 0;
+        }
+        
+        div.gallery a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        
+        div.desc {
+            padding: 0px;
+            text-align: center;
+            padding-top: 0;
+            font-size: 0.7em;
+            letter-spacing: 0.3px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 33%;
+                margin: 6px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 33.33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .icons {
+            height: 60px;
+            background-color: #f9f9f9;
+            width: 80%;
+            margin: 0 auto;
+            border: 1px #ddd solid;
+            border-radius: 10px;
+            position: sticky;
+            position: -webkit-sticky;
+            z-index: 10000;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #main-title {
+            margin-top: -65px;
+            position: relative;
+        }
+        
+        #main-title h3 {
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: auto;
+            font-weight: bold;
+        }
+        
+        #sub-title p {
+            color: white;
+            margin: 0 10px 20px 10px;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        .container {
+            z-index: 9999;
+        }
+        
+        button.btn.btn-info.btn-lg {
+            position: absolute;
+            z-index: 9999 !important;
+            right: 10px;
+            top: 8vh;
+            width: 4em;
+            height: 4em;
+            background-color: transparent;
+            border: 0;
+            background-image: url(https://login.appdolph.org/esportsmy/NNI8ZcB.png);
+            background-size: cover;
+            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        
+        @keyframes heartbeat {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+        }
+        
+        .btn.active.focus,
+        .btn.active:focus,
+        .btn.focus,
+        .btn:active.focus,
+        .btn:active:focus,
+        .btn:focus {
+            outline: none;
+        }
+        
+        a.butang {
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: fit-content;
+            margin: auto;
+            letter-spacing: 1px;
+        }
+        
+        .modal-content {
+            top: 65px;
+            background-color: #ddd;
+        }
+        
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+        }
+        
+        .modal-body p {
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+        }
+        
+        .music {
+            visibility: hidden;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        div#title {
+            padding-left: 10px;
+            padding-top: 0.5em;
+            padding-bottom: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff !important;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        div#secondtitle {
+            padding-left: 12px;
+            padding-top: 0.5em;
+            padding-bottom: 0;
+            font-size: 0.5em;
+            font-weight: 550;
+            letter-spacing: 1.3px;
+            color: #333 !important;
+            display: list-item;
+        }
+        
+        div#secondtitle p {
+            margin-bottom: 0;
+            font-size: 14px;
+            letter-spacing: 0;
+            color: #fff;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+        
+        div#more {
+            float: right;
+            padding-right: 1em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            font-size: 11px;
+            letter-spacing: 1.3px;
+            font-weight: 550;
+            display: none;
+        }
+        
+        div#more a {
+            color: maroon;
+        }
+        
+        div#title.kategori {
+            margin-top: 30px;
+        }
+        
+        #scrolly1 {
+            width: 100%;
+            overflow: scroll;
+            overflow-y: hidden;
+            margin: 0 auto;
+            white-space: nowrap;
+            margin-bottom: 0px;
+        }
+        
+        #scrolly1::-webkit-scrollbar {
+            display: none;
+        }
+        
+        #scrolly1 a {
+            text-decoration: none !important;
+            color: #fff;
+            text-align: center;
+            display: inline-grid;
+            font-size: 11px;
+            height: auto;
+            width: 25vw;
+            white-space: break-spaces;
+            letter-spacing: 0;
+            border: 0;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        
+        #scrolly1 img {
+            width: 20vw;
+            height: 20vw;
+            display: inline;
+            border-radius: 10px;
+            margin: 2.5vw auto;
+            /*border: 1px #ddd solid;*/
+        }
+        
+        .card-container1 {
+            width: auto;
+            overflow-x: scroll;
+            display: flex;
+            background-color: transparent;
+            padding: 1rem;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 20px;
+            overflow-y: hidden;
+        }
+        
+        .card-container1::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .card-container1 .card {
+            min-width: 65vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 0rem;
+            transition: 0.2s;
+            text-align: left;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        
+        .card-container1 .date {
+            color: #8a8a8a;
+        }
+        
+        .card-container1 .card .category-title {
+            font-size: 12px;
+            color: #730000;
+            margin-bottom: 2px;
+        }
+        
+        .card-container1 .card .article-title {
+            font-size: 16px;
+            color: black !important;
+            line-height: 3vh;
+            margin-bottom: 0 !important;
+            font-weight: bold;
+            padding: 0;
+            margin: 10px 10px 20px 10px;
+            display: block;
+        }
+        
+        .card-container1 .card .article-header {
+            margin-bottom: auto;
+        }
+        
+        .card-container1 .card .author {
+            color: #000 !important;
+            font-size: 10px;
+            margin: 10px;
+        }
+        
+        .card-container1 .author .info .caption {
+            color: #8a8a8a;
+            padding-top: 0;
+            font-size: 12px;
+            width: 100%;
+        }
+        
+        .card-container1 .card:not(:first-child) {
+            margin-left: 15px;
+        }
+        
+        .card-container1 .card:hover~.card1 {
+            transform: translateX(20px);
+        }
+        
+        .card-container1 .card img {
+            width: 100% !important;
+            height: auto !important;
+            display: inline;
+            border-radius: 8px 8px 0px 0px;
+            background-color: #71717100;
+            object-fit: contain;
+        }
+        
+        .card-container1 .profile {
+            display: none;
+        }
+        
+        .card-container1 .card a {
+            text-decoration: none !important;
+        }
+        
+        .card-container2 {
+            width: auto;
+            overflow-x: scroll;
+            display: flex;
+            background-color: transparent;
+            padding: 1rem;
+            margin-bottom: 100px;
+            overflow-y: hidden;
+        }
+        
+        .card-container2::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .card-container2 .card {
+            min-width: 55vw;
+            max-width: 55vw;
+            height: auto;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            transition: 0.2s;
+            background-size: 20%;
+            background-repeat: no-repeat;
+            text-align: left;
+            background-color: #fff;
+        }
+        
+        .card-container2 .date {
+            color: #8a8a8a;
+        }
+        
+        .card-container2 .card .category-title {
+            font-size: 10px;
+            color: #fff;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+        
+        .card-container2 .card .article-title {
+            font-size: 14px;
+            font-weight: 550;
+            margin: 5px;
+            text-align: left;
+            color: #337ab7;
+            padding: 0;
+            line-height: 1.4;
+        }
+        
+        .card-container2 .card .article-header {
+            margin-bottom: unset;
+        }
+        
+        .card-container2 .card .author {
+            color: black !important;
+        }
+        
+        .card-container2 .card:not(:first-child) {
+            margin-left: 15px;
+        }
+        
+        .card-container2 .card:hover~.card {
+            transform: translateX(0px);
+        }
+        
+        .card-container2 img {
+            width: 100%;
+            height: auto;
+            display: inline;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .card-container2 a {
+            text-decoration: none !important;
+        }
+        
+        #scrolly2 {
+            width: auto;
+            height: auto;
+            overflow: auto;
+            overflow-y: hidden;
+            margin: 0 auto;
+            background-color: #71717100;
+            white-space: nowrap;
+            overflow-y: hidden;
+        }
+        
+        #scrolly2::-webkit-scrollbar {
+            display: none;
+        }
+        
+        #scrolly2 a {
+            text-decoration: none !important;
+        }
+        
+        #scrolly2 img {
+            width: 25em;
+            height: 18em;
+            margin: 0px 5px;
+            display: inline;
+            border-radius: 15px;
+            background-color: #71717100;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        .card-container3 {
+            width: auto;
+            overflow-x: scroll;
+            display: flex;
+            background-color: transparent;
+            padding: 1rem;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 20px;
+        }
+        
+        .card-container3::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .card-container3 .card {
+            min-width: 75%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0rem;
+            transition: 0.2s;
+            background-color: #eee;
+            text-align: left;
+            border: 0;
+        }
+        
+        .card-container3 .date {
+            color: #8a8a8a;
+        }
+        
+        .card-container3 .card .category-title {
+            font-size: 12px;
+            color: #730000;
+            margin-bottom: 2px;
+        }
+        
+        .card-container3 .card .article-title {
+            font-size: 0px;
+            letter-spacing: 0.8px;
+        }
+        
+        .card-container3 .card .article-header {
+            margin-bottom: auto;
+        }
+        
+        .card-container3 .card .author {
+            margin-top: -1rem;
+            display: grid;
+            grid-template-columns: 8px 1fr;
+            color: black !important;
+            font-size: 10px;
+            letter-spacing: 0.8px;
+            margin-left: 5%;
+        }
+        
+        .card-container3 .author .info .caption {
+            color: #8a8a8a;
+            padding-top: 20px;
+            font-size: 10px;
+            letter-spacing: 0.8px;
+        }
+        
+        .card-container3 .card:not(:first-child) {
+            margin-left: 15px;
+        }
+        
+        .card-container3 .card:hover~.card1 {
+            transform: translateX(20px);
+        }
+        
+        .card-container3 .card img {
+            width: 100%;
+            height: 55vh;
+            display: inline;
+            border-radius: 8px;
+            object-fit: fill;
+        }
+        
+        .coverImg img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(.4);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gambar Header -->
+    <div class="coverImg">
+        <img id="cover" src="https://images.pexels.com/photos/5428012/pexels-photo-5428012.jpeg" alt="" width="100%" height="180px">
+        <div></div>
+    </div>
+
+    <!-- Welcome Username  -->
+    <div id="main-title">
+        <div id="userWelcomeInfo"></div>
+        <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top" href="javascript:void(0);">Edit Profil</a>
+    </div>
+
+    <!-- Pesan -->
+    <div id="sub-title">
+        <p>Apakah Kamu Sudah Belajar Hari ini?</p>
+    </div>
+
+    <!-- 3 menu bagian pertama -->
+    <div class="icons">
+        <!-- Menu Pertama -->
+        <div class="responsive">
+            <div class="gallery">
+                <a data-offline="true" data-params="value_id:149399" data-state="folder2-category-list" target="_top" href="javascript:void(0);">
+                    <img src="https://image.flaticon.com/icons/png/512/3767/3767094.png" alt="left button" width="200" height="200">
+                </a>
+                <div class="desc">Materi</div>
+            </div>
+        </div>
+        <!-- Akhir Menu Pertama -->
+
+        <!-- Menu Kedua -->
+        <div class="responsive">
+            <div class="gallery">
+                <a data-offline="true" data-params="value_id:149399" data-state="folder2-category-list" target="_top" href="javascript:void(0);">
+                    <img src="https://image.flaticon.com/icons/png/512/716/716784.png" alt="middle button" width="200" height="200">
+                </a>
+                <div class="desc">Bank Soal</div>
+            </div>
+        </div>
+        <!-- Akhir Menu Kedua -->
+
+        <!-- Menu Ketiga -->
+        <div class="responsive">
+            <div class="gallery">
+                <a data-offline="true" data-params="value_id:149350" data-state="cms-view" target="_top" href="javascript:void(0);">
+                    <img src="https://image.flaticon.com/icons/png/512/891/891094.png" alt="right button" width="200" height="200">
+                </a>
+                <div class="desc">Latihan</div>
+            </div>
+        </div>
+        <!-- Akhir Menu Ketiga -->
+    </div>
+    <!-- Akhir 3 menu bagian pertama  -->
+
+    <!-- Bagian Category -->
+    <div class="clearfix"></div>
+    <div id="title" class="kategori">Kategori Kursus</div>
+    <div id="secondtitle">
+        <p>Cek Kursus Berdasarkan Kategori.</p>
+        <p></p>
+    </div>
+
+    <div id="scrolly1">
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="tak live">Desain </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="tak live">Pengembangan </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" alt="tak live">Pemasaran </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="tak live">TI dan Perangkat Lunak </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt="tak live">Bisnis </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg" alt="tak live">Fotografi </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt="tak live">Musik </a>
+        <a data-offline="true" data-params="value_id:15436" data-state="padlock-view" target="_top" href="javascript:void(0);">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg" alt="tak live">Monetisasi </a>
+    </div>
+    <br>
+
+    <!-- Kursus -->
+    <div id="title">Kursus Terlaris</div>
+    <div id="secondtitle">
+        <p>Ini dia deretan kursus terlaris saat ini. Yuk, lihat daftarnya?</p>
+        <p></p>
+    </div>
+
+    <!-- Start Card Kursus Terlaris -->
+    <div class="card-container1">
+        <!-- Card 1 -->
+        <div class="card">
+            <a data-offline="false" data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Python</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Bahasa Pemrograman</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 1 -->
+
+        <!-- card 2 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Sertifikasi AWS</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Sertifikasi TI</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 2 -->
+
+        <!-- Card 3 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3100350_65ff_2.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Pengembangan Web</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kagori</div>
+                        <div class="name">Pengembangan Web</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 3 -->
+
+        <!-- Card 4 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3523604_60fc_2.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">JavaScript</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Pengembangan Web</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 4 -->
+
+        <!-- Card 5 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3714102_3607_3.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">SQL</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Analisis & Kecerdasan Bisnis</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 5 -->
+
+        <!-- Card 6 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3598406_2cef_4.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Ilmu Data</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Ilmu Data</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 6 -->
+
+        <!-- Card 7 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15834" data-state="socialnetworks-home" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3607090_87a3_5.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">React</h2>
+                </header>
+                <div class="author">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">Kategori</div>
+                        <div class="name">Pengembangan Web</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Akhir Card 7 -->
+    </div>
+    <!-- Akhir Card Kursus Terlaris -->
+
+    <!-- Judul Materi -->
+    <div id="title">Materi Kursus</div>
+    <div id="secondtitle">
+        <p>Dalami setiap materi dan ikuti selesaikan tantang yang diberikan. Ada hadiahnya juga loh?</p>
+        <p></p>
+    </div>
+
+    <!-- Start Card Materi Kursus -->
+    <div class="card-container2">
+        <!-- Card 1 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:200" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/1595354_af0b.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Dasar Jaringan Komputer untuk Pemula</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 1 -->
+
+        <!-- Card 2 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:200" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3607090_87a3_5.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Mengenal TypeScript: JavaScript yang Memiliki Tipe</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 2 -->
+
+        <!-- Card 3 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:178" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/2277131_2c18.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Pemrograman SQL untuk Pemula</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 3 -->
+
+        <!-- Card 4 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:179" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/2939904_c5c9.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Menjadi Computer Vision Specialist Menggunakan OpenCV Python"</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 4 -->
+
+        <!-- Card 5 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:133" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/2086402_a697_2.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Linux Server Configuration</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 5 -->
+
+        <!-- Card 6 -->
+        <div class="card">
+            <a data-offline="false" data-params="value_id:15328,product_id:119" data-state="mcommerce-product-view" target="_top" href="javascript:void(0);">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            <span class="date"></span>
+                            <img src="https://img-c.udemycdn.com/course/240x135/3113310_ec6b.jpg">
+                        </div>
+                    </div>
+                    <h2 class="article-title">Belajar UI Design dengan Figma dari Basic</h2>
+                </header>
+            </a>
+        </div>
+        <!-- Akhir Card 6 -->
+    </div>
+    <!-- Akhir Card Materi Kursus -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // JS untuk customer
+        var customer = parent.angular.element(parent.document.body).injector().get('Customer').customer;
+        console.log("customer object");
+        if (customer && customer.isLoggedIn) {
+            var welcomeStr = " <br/> <center> <h4> Halo <h3> " + customer.firstname + " " + customer.lastname + " <br/> ";
+            document.getElementById("userWelcomeInfo").innerHTML = welcomeStr;
+        }
+        var x = document.getElementsByClassName("private");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true) x[i].style.display = "block";
+        }
+        var x = document.getElementsByClassName("guest");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true) x[i].style.display = "none";
+        }
+        // Akhir JS untuk customer
+
+        var inAppLinks = document.querySelectorAll("a[data-state]");
+        [].forEach.call(inAppLinks, function(el) {
+            el.href = "javascript:void(0);";
+            el.addEventListener("click", function() {
+                parent.postMessage("state-go=state:" + el.attributes["data-state"].value + ",offline:" + el.attributes["data-offline"].value + "," + el.attributes["data-params"].value + "", "*");
+            });
+        });
+    </script>
+</body>
+
+</html>

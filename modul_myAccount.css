@@ -1,0 +1,201 @@
+/* Modifikasi My Account */
+
+
+/* MY ACCOUNT */
+
+.customer-view.customer-layout1 .list {
+    margin-bottom: 0;
+}
+
+.customer-view.customer-layout1 .list .padding {
+    padding: 10px;
+    font-size: 12px;
+}
+
+div[ng-show="display_login_form"] .text-right {
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div[ng-show="display_login_form"] div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:after {
+    content: "SIGNUP";
+    visibility: visible;
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 10% 0 60%;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    padding: 10px;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:before {
+    visibility: visible;
+    content: "LOGIN";
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: -40px 60% 0 10%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    border-bottom: 2px solid #435b5b;
+    padding: 10px;
+    cursor: default;
+    pointer-events: none;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.list {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom {
+    display: inline-block;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+    visibility: hidden;
+}
+
+[ng-show="display_login_form"] i.icon.ion-ios-person:after {
+    visibility: visible;
+    content: "Email Kamu*";
+    margin-left: -5px;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #435b5b;
+}
+
+[ng-show="display_login_form"] i.icon.ion-locked:after {
+    visibility: visible;
+    content: "Kata Sandi*";
+    margin-left: -5px;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #435b5b;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: left;
+    border-bottom: 2px solid #435b5b;
+    height: 40px;
+    padding-left: 10px;
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* FORGOT PASSWORD PAGE */
+
+[ng-show="display_forgot_password_form"] .padding.text-left {
+    visibility: hidden;
+}
+
+[ng-show="display_forgot_password_form"] .padding.text-left:after {
+    visibility: visible;
+    content: "Silakan masukkan email yang telah Anda daftarkan sebelumnya. Jika merasa belum mendaftar, silakan kembali ke halaman sebelumnya dan klik DAFTAR.";
+    text-align: center;
+    display: block;
+    color: #000;
+    margin-top: -30px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom {
+    border-radius: 30px;
+    border: 2px solid #019031;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom input {
+    width: 100%;
+    text-align: center;
+}
+
+[ng-show="display_forgot_password_form"] .ion-ios-person:before {
+    display: none;
+}
+
+[ng-show="display_forgot_password_form"] div>div:nth-child(4) {
+    display: none;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom .icon.ion-ios-person {
+    display: none;
+}

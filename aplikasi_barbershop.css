@@ -1,0 +1,132 @@
+/* Membat Aplikasi BarberShop
+Layanan yang tersedia di dalam aplikasi yang diulas dalam tutorial ini berupa catalog gaya rambut, promo, layanan untuk membuat janjian dengan barberman, info, dan informasi akun. Silakan simak video di bawah ini.
+ */
+
+.layout.l1 ul {
+    box-shadow: none !important;
+    border-radius: 20px 20px 0 0;
+    padding: 0 !important;
+}
+
+.layout .tab-item img {
+    margin-left: 0;
+}
+
+
+/* Appointment */
+
+.view_appointment .cover_image img {
+    margin-top: 50px;
+}
+
+
+/* tambahan teks */
+
+[state="appointment-view"] .card.cover_image:after {
+    content: "Silakan membuat janjian dengan barberman langganan Anda dengan menekan button Book Appointment di bawah ini.";
+    text-align: center;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+}
+
+.view_appointment .tab-categories h2 {
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.view_appointment .tabs-container .tab-categories .card .item.item-custom.item-category:nth-child(2) {
+    height: 150px !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/12/dewasa-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.view_appointment .tabs-container .tab-categories .card .item.item-custom.item-category:nth-child(3) {
+    height: 150px !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/12/5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+.view_appointment .tabs-container .tab-categories .card .item.item-custom.item-category:nth-child(4) {
+    height: 150px !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/12/rmbutanak-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+
+/* Catalog Pro */
+
+[state="catalogpro-home"] .list .item.item-custom .row .col-50 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    border-radius: 10px;
+    margin: 5px 1%;
+    left: 0;
+    right: 0;
+    background-color: #f3f3f3;
+}
+
+[state="catalogpro-home"] .list .item {
+    padding: 0;
+}
+
+[state="catalogpro-home"] .catalogpro .product_grid .catalogpro-product-grid-img {
+    min-height: 150px !important;
+    width: 80% !important;
+    margin-left: 10%;
+}
+
+[state="catalogpro-home"] .list .item.item-custom .row .col-50 p {
+    text-align: center;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+[state="catalogpro-home"] .list .item.item-custom .row .col-50 h2 {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.catalogpro.catalogpro-filter-orders #products_slider .slider-slide img {
+    width: 60% !important;
+    margin-left: 20%;
+}
+
+
+/* all icon */
+
+.ion-android-favorite-outline::before,
+.ion-ios-star::before,
+.ion-heart::before,
+.ion-ios-location-outline::before,
+.ion-ios-browsers-outline::before,
+.ion-ios-gear-outline::before,
+.ion-ios-person-outline::before,
+.ion-ios-calendar-outline::before,
+.ion-ios-information-outline::before,
+.ion-ios-checkmark-outline::before {
+    color: #ee4a4a;
+}
+
+.ion-search::before {
+    color: #387ef5;
+}
+
+[state="catalogpro-home"] ion-content .scroll,
+[state="appointment-view"] ion-content .scroll {
+    background-color: #f3f3f3 !important;
+    border-radius: 40px 40px 0 0;
+    margin-top: 10px;
+}

@@ -1,0 +1,183 @@
+/* Layout Taxi 04 - Modifikasi Layout Taxi
+Catatan:
+
+Untuk mengubah warna, silakan ubah pada variable warna induk yang diawali tanda $. Misalnya, Anda mau mengubah warna latar belakang pada ikon menu pertama, maka yang diubah cukup kode warna HEX #ff6b01 dari variable  warna $wicon1: #ff6b01. Begitu juga dengan gambar latar belakang.
+ */
+
+
+/* WARNA */
+
+$wicon1: #ff6b01;
+$wicon2: #3bb150;
+$wicon3: #645faf;
+$wicon4: #015792;
+$wicon5: #c7ddd1;
+$wborder: #ecf0f6;
+$bghomepage: #fff;
+$hhomepage: #767676;
+$tombollogin: #008000;
+$bg-header: "https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/servizi-pubblicitari.jpg";
+$bg-login: "https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/login-4.png";
+
+/* LAYOUT TAXI */
+
+ion-side-menu.menu.menu-left.menu-left-open,
+ion-side-menu.menu.menu-left {
+    width: 90vw !important;
+    background-color: transparent !important;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    background: url($bg-header) !important;
+    background-position: center top !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    padding: 0;
+    display: flex;
+    height: 320px;
+    margin: 0;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 25vw;
+    width: 25vw;
+    border: 4px solid $wborder;
+    border-radius: 15px !important;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.layout_taxi .taxi-header .row:first-child {
+    padding: 0;
+    margin-left: 5px;
+    width: 70%;
+    justify-content: end;
+    align-items: center;
+}
+
+.layout_taxi .taxi-header .row:last-child {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+}
+
+.layout_taxi .row:nth-child(2) .text-center.col {
+    text-align: left;
+}
+
+.layout_taxi .taxi-header .row:nth-child(1) .text-center.col {
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: -20px;
+}
+
+.layout_taxi .taxi-header .row:nth-child(2) .text-center.col {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.layout_taxi ul.items.homepage-custom {
+    padding-top: 90px;
+    margin-top: -175px;
+    border-radius: 20px 0 0 0;
+    background-color: $bghomepage !important;
+}
+
+.layout_taxi .customer-name {
+    width: 100%;
+    font-size: 80%;
+    color: $wicon1;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin-left: 1em;
+    font-weight: normal;
+    font-variant: normal;
+    color: $hhomepage;
+    font-size: 16px;
+}
+
+.layout_taxi .lines {
+    height: 70px;
+    margin-left: 20px;
+}
+
+.layout_taxi .line-box {
+    display: flex;
+    align-items: center;
+    height: 70px !important;
+}
+
+.layout_taxi .line-icon-box {
+    width: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: $wborder;
+    margin: 5px !important;
+    border-radius: 5px !important;
+}
+
+.layout_taxi li:nth-child(5n+1) .line-icon-box {
+    background-color: $wicon1;
+}
+
+.layout_taxi li:nth-child(5n+2) .line-icon-box {
+    background-color: $wicon2;
+}
+
+.layout_taxi li:nth-child(5n+3) .line-icon-box {
+    background-color: $wicon3;
+}
+
+.layout_taxi li:nth-child(5n+4) .line-icon-box {
+    background-color: $wicon4;
+}
+
+.layout_taxi li:nth-child(5n+5) .line-icon-box {
+    background-color: $wicon5;
+}
+
+.layout_taxi .line-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.layout_taxi .taxi-signup span.taxi-signup-text.ng-binding,
+.layout_taxi .taxi-signup span.taxi-or-text.ng-binding {
+    display: none;
+}
+
+.layout_taxi .taxi-signup span.taxi-login-text.ng-binding {
+    width: 60%;
+    background-color: $tombollogin;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    margin-top: -25px;
+    margin-left: 20%;
+    text-align: left;
+    background-image: url($bg_login);
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 4px solid $wborder;
+}

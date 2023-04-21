@@ -1,0 +1,380 @@
+/* Modifikasi Folder v2 untuk Aplikasi Multimedia
+
+
+Folder v2 dapat domodifikasi sesuai dengan gambar di atas. Untuk tutorialnya, silakan simak video di bawah ini dan gunakan script CSS yang disertakan dalam artikel ini.
+
+Tempatkan CSS ke menu Color - Advanced Customization CSS/SCSS.  */
+
+
+/* menu layout 1 */
+
+.layout .tab-item img {
+    margin-left: 0;
+}
+
+
+/* menu ke tiga */
+
+.layout.l1 ul li.col.col-20.tab-item:nth-child(5) {
+    height: 70px;
+    margin-top: -35px;
+    padding-top: 10px;
+    border: 3px solid #fff;
+    /* box-shadow: 0 -2px 0 rgb(115 192 95 / 80%); */
+    opacity: 1;
+    border-radius: 150px;
+    background: #5682ef;
+    box-shadow: inset 15px 15px 29px #5682ef, inset -15px -15px 29px #5682ef;
+}
+
+
+/* Tukar posisi menu */
+
+.layout.l1 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout.l1 ul li:nth-child(4) {
+    order: 3;
+}
+
+.layout.l1 ul li:nth-child(5) p {
+    display: none;
+}
+
+.layout.l1 ul li:nth-child(5) img {
+    margin-top: 5px;
+}
+
+.layout.l1 ul li:nth-child(3) {
+    order: 4;
+}
+
+
+/* Folder v2 */
+
+
+/* gambar thumbnail front */
+
+ion-view[state="folder2-category-list"] div[ng-if="(current.showCover || current.showTitle)"] {
+    display: none;
+}
+
+
+/*
+ion-view[state="folder2-category-list"] #search_section.list.folder2-search {
+	background-color: #7295ef !important;
+  	width: 90%;
+  	margin: 5px 5%;
+  	border-radius: 10px;
+} */
+
+
+/* atur warna bg kolom cari */
+
+ion-view[state="folder2-category-list"] label.item.item-input.item-custom {
+    background-color: #7295ef !important;
+    width: 90%;
+    margin: 5px 5%;
+    border-radius: 30px;
+}
+
+
+/* atur warna list */
+
+ion-view[state="folder2-category-list"] .scroll>div.list {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 5%;
+    margin-left: 0 !important;
+}
+
+
+/* atur setiap item */
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(1),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(2),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(3),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(4),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(5),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(6) {
+    display: inline-block;
+    background-color: transparent;
+    width: 25%;
+    margin: 0;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(7),
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(8) {
+    display: none;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(9) {
+    border-radius: 20px 20px 0 0;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(9):after,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(10):after,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(11):after {
+    content: "...";
+    width: 100%;
+    text-align: right;
+    display: block;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #7295ef;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(12) {
+    height: 180px;
+    background-image: url("https://image.freepik.com/free-vector/clean-video-player-template-with-simple-buttons_1017-27217.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(12) h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7295ef;
+    border-radius: 10px;
+    background-color: #d4ddfe;
+    padding: 10px;
+    visibility: hidden;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(13) {
+    height: 180px;
+    background-image: url("https://image.freepik.com/free-vector/social-media-modern-video-player-mockup-template-design_1017-27214.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(13) h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7295ef;
+    border-radius: 10px;
+    background-color: #d4ddfe;
+    padding: 10px;
+    visibility: hidden;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(14) {
+    height: 180px;
+    background-image: url("https://image.freepik.com/free-photo/woman-making-video-call-laptop_53876-95835.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(14) h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7295ef;
+    border-radius: 10px;
+    background-color: #d4ddfe;
+    padding: 10px;
+    visibility: hidden;
+}
+
+
+/* atur gambar thumbnail */
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:first-child img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(1) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(2) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(3) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(4) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(5) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(6) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(7) img,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(8) img {
+    display: block;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: -7px auto 0 auto !important;
+    padding: 0;
+}
+
+
+/* atur judul item */
+
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(1) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(2) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(3) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(4) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(5) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(6) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(7) h2,
+ion-view[state="folder2-category-list"] .list a.item.item-custom.item-avatar-square.item-avatar.item-center:nth-child(8) h2 {
+    display: block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+
+/* icon x pada kolom search */
+
+.icon.ion-backspace {
+    margin-right: 20px;
+}
+
+
+/* HOMEPAGE */
+
+.layout.l2 .col-20 {
+    max-width: 14% !important;
+    top: 5px !important;
+}
+
+.layout.l2 .col-20 p {
+    display: none;
+}
+
+.layout.l2 .tabs {
+    height: 8vh !important;
+    border-radius: 20px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+    opacity: 1 !important;
+    height: 40vh !important;
+    margin-top: 60vh;
+    background-color: #ededed !important;
+    border-radius: 40px 40px 0 0 !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-custom {
+    border-color: rgba(68, 68, 68, 1);
+    background-color: transparent;
+    color: #fff !important;
+    display: inline-block;
+    border: 0;
+    height: 90px;
+    width: 25%;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-custom img {
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 5px auto !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-custom h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 5px auto !important;
+    margin-top: 30px !important;
+    font-size: 12px !important;
+    color: #000 !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list [ng-click="closeMore();"] {
+    width: 100% !important;
+    display: inline-block !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-center.item-avatar.item-icon-left.item-custom h2 {
+    display: block;
+    width: 50%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-top: 0 !important;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff9140 !important;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .ion-close:before {
+    display: none;
+}
+
+.layout .tab-item img {
+    margin-left: 0;
+    left: 0;
+    padding: 0;
+}
+
+
+/* DEVICE 320*568 */
+
+@media screen and (max-width: 320px) {
+    ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+        opacity: 1 !important;
+        height: 50vh !important;
+        margin-top: 50vh;
+        background-color: #243369 !important;
+        border-radius: 40px 40px 0 0 !important;
+    }
+}
+
+
+/* DEVICE 360*640 */
+
+@media screen and (max-width: 360px) {
+    ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+        opacity: 1 !important;
+        height: 50vh !important;
+        margin-top: 50vh;
+        background-color: #243369 !important;
+        border-radius: 40px 40px 0 0 !important;
+    }
+}
+
+.booking-view.booking-view-l1 form .list:nth-child(3) {
+    display: none !important;
+}
+
+@media screen and (min-width: 720px) {
+    .layout.l1 ul {
+        margin-bottom: 2vh !important;
+    }
+}
+
+
+/* garis 3 pada menu selengkapnya */
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic>ion-content>.scroll:before {
+    content: "---";
+    font-weight: bold;
+    font-size: 28px;
+    display: block;
+    width: 100%;
+    color: #5682ef;
+    text-align: center;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic div.list {
+    margin: 0;
+    padding: 0;
+}
+
+Simak Video Panduan

@@ -1,0 +1,146 @@
+/* Modifikasi Layout 11 */
+
+
+/* layout 11 */
+
+ion-view[state="home"].pane.has-background-image {
+    background-image: none !important;
+    background-color: #ffff !important;
+    background: rgb(236, 240, 246);
+    background: linear-gradient(90deg, rgba(236, 240, 246, 1) 50%, rgba(255, 255, 255, 1) 50%) !important;
+}
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px 10px 50px 10px;
+    background-color: #ecf0f5;
+    padding: 5p;
+}
+
+.layout.l11 .items.homepage-custom.border-custom {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.layout.l11 a p {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #000 !important;
+    text-transform: capitalize !important;
+}
+
+span.slider-pager-page.active {
+    width: 30px;
+    background-color: #ff3801;
+    border-radius: 30px;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    height: 10px;
+}
+
+.layout .slider-pager {
+    height: calc(20px + var(--safe-area-inset-bottom))!important;
+    bottom: 0;
+    background-color: transparent;
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.layout.l11 .slider {
+    height: 57vh;
+    padding-top: 50px !important;
+    background-color: #fff;
+    border-radius: 50px 0 0 0;
+    margin-top: -5px !important;
+}
+
+
+/*
+.layout.l11 .slider:before {
+    content: "Lorem ipsum is a dummy text";
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+} */
+
+div#homepage_slider {
+    background-color: #ecf0f6 !important;
+    height: 43vh !important;
+    border-radius: 0 0 50px 0;
+}
+
+
+/*
+[ng-repeat="page in features.overview.paged_options"]:after {
+    content: "Welcome";
+    display: block !important;
+    text-align: center;
+    margin-top: 66px !important;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -50px;
+} */
+
+.layout.l11 a {
+    position: relative;
+    width: 28%;
+    margin: 10px 2.6%;
+    display: inline-block;
+    float: none;
+    height: auto;
+}
+
+.layout.l11 a img {
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+}
+
+.layout.l11 a .items {
+    padding: 10px;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    height: 20%;
+    top: 0;
+    bottom: 0;
+}
+
+.layout.l11 a p {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #000 !important;
+    text-transform: capitalize !important;
+    font-size: 11px;
+    white-space: normal;
+}
+
+.layout.l11 .slider .slider-slides ion-slide.slider-slide:first-child:before {
+    content: "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.";
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+.layout.l11 .slider .slider-slides ion-slide.slider-slide:nth-child(2):before {
+    content: "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.";
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}

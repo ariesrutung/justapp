@@ -1,0 +1,101 @@
+/* Quantity */
+
+.popup-container.popup-showing.active .popup-body>label:nth-child(1):after {
+    content: "Quantità";
+    font-size: 14px;
+}
+
+.popup-container.popup-showing.active .popup-body>label:nth-child(1) {
+    font-size: 0 !important;
+}
+
+
+/* Name */
+
+.popup-container.popup-showing.active .popup-body label:nth-child(4):after {
+    content: "Il Tuo Nome e Cognome";
+    font-size: 14px;
+}
+
+.popup-container.popup-showing.active .popup-body label:nth-child(4) {
+    font-size: 0 !important;
+}
+
+
+/* Address */
+
+.popup-container.popup-showing.active .popup-body label:nth-last-child(5):after {
+    content: "Il Tuo Indirizzo";
+    font-size: 14px;
+}
+
+.popup-container.popup-showing.active .popup-body label:nth-last-child(5) {
+    font-size: 0 !important;
+}
+
+
+/* Notes */
+
+.popup-container.popup-showing.active .popup-body label:nth-last-child(2):after {
+    content: "Note";
+    font-size: 14px;
+}
+
+.popup-container.popup-showing.active .popup-body label:nth-last-child(2) {
+    font-size: 0 !important;
+}
+
+
+/* Cancel */
+
+.popup-container.popup-showing.active button.button.ng-binding.button-default:after {
+    content: "Cancella";
+    font-size: 14px;
+    background-color: rgba(0, 122, 255, 1) !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.popup-container.popup-showing.active button.button.ng-binding.button-default {
+    font-size: 0 !important;
+}
+
+
+/* Send */
+
+.popup-container.popup-showing.active button.button.ng-binding.button-positive:after {
+    content: "Invia";
+    font-size: 14px;
+    background-color: rgba(0, 122, 255, 1) !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.popup-container.popup-showing.active button.button.ng-binding.button-positive {
+    font-size: 0 !important;
+}
+
+
+/* Header */
+
+.popup-container.popup-showing.active .popup-head h3.popup-title.ng-binding:after {
+    content: "Inserire Dettagli Ordine";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.popup-container.popup-showing.active .popup-head h3.popup-title.ng-binding {
+    font-size: 0 !important;
+}
+
+.popup-container.popup-showing.active .popup-buttons {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}

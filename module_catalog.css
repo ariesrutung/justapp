@@ -1,0 +1,68 @@
+[state="catalog-product-view"] .list.card {
+    box-shadow: none;
+    margin: 0;
+}
+
+[state="catalog-product-view"] .list.card div.item.item-text-wrap.item-custom:first-child,
+[state="catalog-product-view"] .list.card .icon.ion-ios-pricetag-outline {
+    display: none;
+}
+
+[state="catalog-product-view"] [ng-if="product.picture"] {
+    width: 70%;
+    margin: 0 15%;
+}
+
+[state="catalog-product-view"] [ng-if="product.price"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background: #eaeaea !important;
+}
+
+[state="catalog-category-list"] .item.item-custom.item-thumbnail-left {
+    display: inline-block !important;
+    width: 100%;
+    position: relative;
+    padding: 0 5px;
+}
+
+[state="catalog-category-list"] .item.item-custom.item-thumbnail-left img {
+    display: block !important;
+    width: 100%;
+    position: relative;
+    margin: 0 auto 10px auto;
+    left: 0;
+    right: 0;
+    max-width: 50%;
+    max-height: 100% !important;
+    z-index: 1;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid #eaeaea;
+}
+
+[state="catalog-category-list"] .item.item-custom.item-thumbnail-left h2 {
+    display: block !important;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 50px 15px 0 15px;
+    background-color: #eaeaea;
+    margin-top: -90px;
+    border-radius: 30px 30px 0 0;
+}
+
+[state="catalog-category-list"] .item.item-custom.item-thumbnail-left p.three-lines.ng-binding {
+    display: block !important;
+    width: 100%;
+    white-space: normal;
+    position: relative;
+    padding: 20px 15px;
+    background-color: #eaeaea;
+    border-radius: 0 0 30px 30px;
+}

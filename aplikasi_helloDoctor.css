@@ -1,0 +1,457 @@
+.layout.l9 .items.homepage-custom {
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+* {
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+.bar.bar-custom div.title.title-left.header-item span {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll:after {
+    content: "JustHello ©2020";
+    text-align: center;
+    width: 100%;
+    color: #0080b1;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:first-child div.item.item-image.item-custom img {
+    display: none;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:first-child div.item.item-custom {
+    width: 100%;
+    background-color: $bar-custom-bg;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:first-child div.item.item-custom h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:first-child {
+    width: 50%;
+    float: right;
+    margin-top: -50px;
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0 0 20px 15px;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:first-child img {
+    display: none;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:first-child h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: -5px;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(2) {
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_medicine_b1ol-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(2) img,
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(2) h2 {
+    display: none;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(3) {
+    width: 90%;
+    margin: 50px 5% 10px 5%;
+    border: 2px solid #0080b1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 128, 177, .5);
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(4),
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(5) {
+    width: 90%;
+    margin: 10px 5%;
+    border: 2px solid #0080b1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+ion-view[state="folder2-category-list"] ion-content div.list:last-child a:nth-child(n+2) h2 {
+    font-size: 20px;
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+
+/*    background-image: linear-gradient(rgb(255, 255, 255), rgb(0 128 177)), url(./img/placeholder/white-1.png); */
+
+
+/* FORM */
+
+.module-form2.form2.form2-home.form2-home-l1 ion-item:nth-of-type(1) p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label {
+    display: inline-block;
+    width: 100%;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label input,
+.module-form2.form2.form2-home.form2-home-l1 label textarea {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -.5%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label.item-select.form2-select {
+    width: 96%;
+    margin: 0 .5% 0 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .button.button-positive-custom {
+    width: 30%;
+    margin-left: 35%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0080b1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .input-label {
+    width: 100% !important;
+    display: block;
+    margin: 0;
+}
+
+img.form2-illustration {
+    width: 96% !important;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+.list div.item.item-custom.item-icon-left.form2-date {
+    width: 96%;
+    margin: 0 .5% 10px 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .list div.item.item-custom.item-icon-left.form2-date .ion-calendar:before {
+    color: #0080b1;
+}
+
+
+/* APPOINTMENT */
+
+ion-view.view_appointment ion-content .card button {
+    width: 90%;
+    margin: 20px 5% 10px 5%;
+    border: 2px solid #0080b1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 128, 177, .5);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+ion-view.view_appointment .button.button-custom.active,
+.button.button-custom.activated {
+    background-color: #0080b1;
+    border: 0;
+    color: #fff;
+}
+
+ion-view.view_appointment .tab-item .icon {
+    font-size: 24px;
+    color: #ffffff !important;
+    background-color: #0080b1;
+    padding: 0;
+}
+
+ion-view.view_appointment .tab-nav.tabs {
+    display: none;
+}
+
+ion-view.view_appointment .tabs-icon-top>.tabs .tab-item {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 0 !important;
+}
+
+ion-view.view_appointment .card .item-divider.item-divider-custom h2 {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: MaisonNeue-Book, sans-serif;
+    color: #0080b1;
+}
+
+ion-view.view_appointment .tab-informations form label input,
+ion-view.view_appointment .tab-informations form label textarea {
+    width: 100%;
+    margin: 5px 0;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+}
+
+ion-view.view_appointment .tab-informations form .list.card button,
+ion-view.view_appointment .tab-confirm-informations .list.card button {
+    width: 30%;
+    margin-left: 35%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0080b1;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+ion-view.view_appointment .tab-thanks h2,
+ion-view.view_appointment .tab-thanks p {
+    text-align: center;
+    color: #0080b1;
+}
+
+ion-view.view_appointment .tab-thanks .list.card:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_medicine_b1ol-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+
+/* my appointment */
+
+[state="appointment-booked"] .list:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_medical_care_movn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+[state="appointment-booked"] .list .card,
+.tab-locations .list.card .item.item-custom.item-location,
+.tab-services .list.card .item.item-custom.service,
+.tab-providers .card .item.item-custom {
+    width: 90%;
+    margin: 20px 5% 10px 5%;
+    border: 2px solid #0080b1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 128, 177, .5);
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+.tab-locations:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_location_tracking_46qb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+.tab-services:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_faq_rjoy.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+.tab-providers:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_select_option_y75i.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+.part-calendar .card .item-divider.item-divider-custom:after {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_events_2p66.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    height: 180px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+.tab-informations:before {
+    content: ".";
+    width: 100% !important;
+    background-color: transparent;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2020/11/undraw_shared_workspace_hwky.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 250px;
+    margin: 20px 0;
+    display: block;
+    color: #fff;
+}
+
+.ion-chevron-right:before,
+.ion-sb-turn-right:before,
+.ion-android-call:before,
+.ion-earth:before,
+.ion-ios-world-outline:before {
+    color: #0080b1;
+}
+
+.view_appointment .active {
+    background-color: #0080b1;
+}
+
+.view_appointment .boto-prev:after,
+.view_appointment .boto-next:after {
+    top: 10px;
+}
+
+
+/* PLCAES */
+
+.module-places {
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+.module-places .svg_filter_bg {
+    fill: #0080b1;
+}
+
+.module-places .cover-place .place-title .span-title {
+    background: #0080b1b8;
+}
+
+.module-places .cover-place .place-title .span-subtitle {
+    background: rgb(0 128 177 / 72%);
+}
+
+.module-places .card {
+    padding: 0 !important;
+    border: 2px solid #0080b1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 128, 177, .5);
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+
+/* WORDPRESS */
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list .list.card:nth-child(1) {
+    display: none;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list .list.card {
+    box-shadow: none;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-view .list.card {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content .list.card a {
+    display: inline-block;
+    width: 100%;
+    height: 380px;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #eff1f2;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content .list.card a img {
+    display: block;
+    max-width: 100%;
+    max-height: 280px !important;
+    margin: -15px 0 0 -12px;
+    padding: 0;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content .list.card a h2 {
+    display: block;
+    width: 100%;
+    max-height: 300px !important;
+    margin: 290px 0 0 0 !important;
+    padding: 0 10px;
+    font-family: MaisonNeue-Book, sans-serif;
+    font-weight: bold;
+    overflow: auto;
+    text-overflow: initial;
+    white-space: normal;
+}
+
+.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content .list.card a p {
+    overflow: initial;
+    text-overflow: initial;
+    white-space: normal;
+    padding: 5px 5px 0 5px;
+}

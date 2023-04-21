@@ -1,0 +1,203 @@
+/* Header */
+
+.bar.bar-custom .title {
+    color: rgba(48, 48, 48, 1);
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
+
+
+/* MY ACCOUNT START */
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: #fff !important;
+}
+
+
+/* Login Page */
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] {
+    padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: transparent;
+    color: #363636;
+    padding: 15px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list:before {
+    content: "Hey, Login Now";
+    display: block;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 2%;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]:before {
+    content: " ";
+    height: 200px;
+    display: block;
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/undraw_Login_re_4vu2.svg);
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6 !important;
+    padding-bottom: 0px;
+    height: 60px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] i.icon.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div[ng-click="displayAccountForm()"] {
+    font-size: 11px;
+    text-align: left;
+    padding: 5px 0;
+    color: #007aff;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .padding.text-right {
+    padding: 0 0 50px 0;
+    margin-top: -15px;
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] span[ng-click="displayForgotPasswordForm()"] {
+    color: #3498db !important;
+    font-size: 11px !important;
+}
+
+
+/* LOGIN PAGE END */
+
+
+/* FORGOT PASSWORD PAGE */
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] {
+    padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .padding.text-left {
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .padding.text-left:before {
+    content: "Forgot Password?";
+    display: block;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 2% 10px 0;
+    line-height: 1.8;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"]:before {
+    content: " ";
+    height: 200px;
+    display: block;
+    background-size: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_emails_6uqr.svg);
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6 !important;
+    padding-bottom: 0px;
+    height: 60px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] i.icon.ion-ios-person {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: #3498db;
+}
+
+
+/* FORGOT PASSWORD PAGE END*/
+
+
+/* SIGNUP PAGE */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: #387ef5 !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Kebijakan Privasi";
+    font-size: 11px;
+    color: #387ef5;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 11px;
+    color: #387ef5;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: #3498db;
+}
+
+
+/* SIGNUP PAGE END */

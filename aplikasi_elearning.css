@@ -1,0 +1,1293 @@
+Modul yang digunakan dalam CSS ini adalah Source Code,
+Custom Page,
+Folder v2,
+Attendance,
+Padlock,
+My Account,
+Calendar,
+dan PushNot. Silakan tempatkan CSS di bawah ini ke menu Colors - Adavanced Customization CSS/SCSS editor Anda. Panduan dapat mengikuti beberapa video di bawah ini. Part 1 Part 2 Part 3
+/* space di bagian bawah ion conten */
+
+ion-content {
+    bottom: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 .card .item.item-custom {
+    border: 0;
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    width: 96%;
+    margin: 5px 2%;
+    border-radius: 10px;
+}
+
+
+/* FOLDER */
+
+.folder-layout.folder-l3 .folder-l3-row div.folder-l3-col {
+    margin: 0 6px;
+    padding: 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+
+/*.folder-layout.folder-l3 .folder-l3-row:nth-child(1) {
+    margin-top: 0;
+    height: 60px;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 10000;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    margin-bottom: 40px;
+}
+*/
+
+
+/*.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom {
+    background-image: none !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom p.folder-title.ng-binding {
+    top: 0;
+    white-space: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}*/
+
+[ng-if="current.showTitle"] h2 {
+    text-align: center;
+}
+
+.item.item-image.item-custom img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+}
+
+
+/* 3 menu pertama */
+
+.folder-layout.folder-l3 .folder-l3-row div.folder-l3-col img {
+    width: 100%;
+    height: 50px;
+}
+
+
+/*.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom {
+    display: flex;
+    background-image: none !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom p.folder-title.ng-binding {
+    content: " ";
+    background-image: url(https://image.flaticon.com/icons/png/512/148/148953.png);
+    height: 55px;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    bottom: 0 !important;
+    padding-top: 30px;
+}*/
+
+.folder-l3-row,
+.folder-l3-row:nth-child(2),
+.folder-l3-row:nth-child(3) {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+
+/* 3 menu pertama */
+
+.folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom:nth-child(1) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/2206/2206433.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom:nth-child(2) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/553/553863.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom:nth-child(3) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/1157/1157026.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+
+/* 3 menu kedua */
+
+.folder-l3-row:nth-child(2) .folder-l3-col.item.item-custom:nth-child(1) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/1333/1333744.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(2) .folder-l3-col.item.item-custom:nth-child(2) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/1333/1333711.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(2) .folder-l3-col.item.item-custom:nth-child(3) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/1333/1333712.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+
+/* 3 menu ketiga */
+
+.folder-l3-row:nth-child(3) .folder-l3-col.item.item-custom:nth-child(1) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/716/716784.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(3) .folder-l3-col.item.item-custom:nth-child(2) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/760/760759.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.folder-l3-row:nth-child(3) .folder-l3-col.item.item-custom:nth-child(3) {
+    width: 100% !important;
+    min-width: 47% !important;
+    display: inline-block !important;
+    height: 100px;
+    margin: 0 2%;
+    background-image: url(https://image.flaticon.com/icons/png/512/716/716869.png) !important;
+    background-repeat: no-repeat;
+    background-size: 35% !important;
+    background-position: center right 10px;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+
+/*.folder-l3-row:nth-child(2) p.folder-title.ng-binding:after,
+.folder-l3-row:nth-child(3) p.folder-title.ng-binding:after {
+    content: " Isi apa saja di sini";
+    display: block !important;
+    font-size: 13px;
+    color: #000;
+    font-weight: normal;
+}*/
+
+.folder-l3-row p.folder-title.ng-binding,
+.folder-l3-row:nth-child(2) p.folder-title.ng-binding,
+.folder-l3-row:nth-child(3) p.folder-title.ng-binding {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 18px;
+    top: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+ion-view[state="folder2-category-list"] .item.item-custom h2.ng-binding {
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view[state="folder2-category-list"] .scroll>div .item.item-custom h2 {
+    color: #000;
+}
+
+ion-view[state="folder2-category-list"] .scroll>div .item.item-custom {
+    border: 0;
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    width: 46%;
+    margin: 5px 2%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] h2 {
+    font-weight: bold !important;
+    font-size: 21px !important;
+    text-align: left;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] {
+    background-color: transparent !important;
+}
+
+[ng-if="current.showCover && current.picture"] {
+    background-color: transparent !important;
+}
+
+
+/* FOLDER */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent;
+}
+
+ion-content.sourcecode-view.scroll-content.ionic-scroll.overflow-scroll.has-header {
+    top: 0 !important;
+}
+
+ion-content.sourcecode-view.scroll-content {
+    bottom: 0 !important;
+}
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+ion-content.sourcecode-view:before {
+    height: 250px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(30%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+.always .layout.l1 .tabs {
+    box-shadow: none !important;
+    background-color: #fff;
+}
+
+.layout.l1 ul li p {
+    display: none;
+}
+
+.layout.l1 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout.l1 ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.no-shadow img {
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card.no-shadow {
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-content.scroll-content.ionic-scroll.has-header {
+    top: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 .card {
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    bottom: 0 !important;
+    background-color: transparent;
+}
+
+
+/* HEADER */
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+.title.title-left.header-item {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.bar-custom .button.button-clear {
+    color: #fff !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header {
+    top: 20px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center {
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #638eff !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+.button.button-custom.ng-binding {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #000 !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active:after {
+    content: " ";
+    border-bottom: 2px solid #638eff !important;
+    display: block !important;
+    height: 45px !important;
+    width: 70% !important;
+    margin-left: 18%;
+}
+
+
+/* END HEADER */
+
+
+/* ATENDANCE HOME */
+
+
+/* Menjadikan attendance as an inbox module */
+
+ion-view.attendance.attendance-home [ng-if="is_logged_in && payout_data.settings.leave_enable"],
+[ng-click="showScanCamera()"],
+[ng-click="action.tab = 'attendance'"],
+[ng-click="action.tab = 'leaves'"],
+[ng-if="!is_loading && payout_data.settings.holiday_enable == 1"],
+[ng-click="attendanceHistory()"],
+.card.attendance-check-in-out-box {
+    display: none !important;
+}
+
+ion-view.attendance.attendance-home ion-content,
+ion-view.attendance.attendance-message ion-content {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    top: 0 !important;
+    padding-top: 60px;
+}
+
+ion-view.attendance.attendance-home ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url("https://angular.io/assets/images/logos/angular/angular.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.attendance.attendance-home .row.check-in-out-buttons.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-message .list {
+    margin-bottom: 0;
+    padding-bottom: 100px !important;
+    margin-bottom: 100px;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-custom,
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-custom {
+    display: none;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 0 !important;
+    background: rgb(71, 82, 158);
+    background: linear-gradient(90deg, #e91e63 0%, #ff9800 100%);
+    padding-top: 100px;
+    box-shadow: 5px 5px 5px #dfe7ff !important;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/finger-print-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 101px;
+    background-position: center top 30px;
+}
+
+ion-view.attendance.attendance-home .card {
+    box-shadow: none !important;
+}
+
+ion-view.attendance.attendance-home ng-include {
+    display: block !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card.attendance-customer-box {
+    display: block;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding i.icon.ion-email {
+    display: none;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding .badge.badge-assertive-custom {
+    background-color: #638eff;
+    color: #fff;
+    position: absolute;
+    top: 3px !important;
+    right: 15px !important;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home p.location_status {
+    font-size: 0;
+    width: 0vw;
+}
+
+ion-view.attendance.attendance-home .item.item-custom.remove-border.text-center {
+    padding-top: 0;
+    background-color: transparent !important;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box .item.item-custom.remove-border {
+    background-color: transparent;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding,
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    text-align: center;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding {
+    color: #fff !important;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    font-size: 13px;
+    color: #fff;
+}
+
+ion-view.attendance.attendance-home p.location_status marquee.ng-binding {
+    font-size: 13px !important;
+    position: fixed;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom {
+    background-color: transparent !important;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding:after {
+    content: "Mulai Chat";
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    color: #2978cd !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding {
+    display: flex;
+    margin-top: 120px;
+    background-color: white;
+    padding: 17px;
+    text-align: center;
+    color: #2978cd !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 0;
+}
+
+[ng-if="is_logged_in && !is_loading && payout_data.settings.is_message_admin"]:before {
+    content: "Untuk memulai chating dengan admin, silakan klik tombol Mulai Chat di bawah ini.";
+    display: block;
+    line-height: 1.8;
+    width: 96%;
+    text-align: center;
+    margin: 0 2%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-home p.checkedin-time.text-center.ng-binding {
+    background-color: transparent;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.now-time.text-center.ng-binding {
+    background-color: transparent;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home span.clock-count.icon.icon-active-custom.ng-binding {
+    color: #638eff !important;
+}
+
+
+/* Page list chat */
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding {
+    background-color: transparent;
+    color: #fff;
+    font-size: 0;
+}
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding:after {
+    content: "History chat dengan Admin";
+    font-size: 16px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right p {
+    color: #fff;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 90%;
+    margin: 10px 2% 10px 8%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+.bar.bar-stable.bar-footer {
+    background-image: none !important;
+    border: 0 !important;
+    bottom: 5rem !important;
+    width: 96%;
+    margin: 0 2%;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left p {
+    color: #fff;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left {
+    width: 90%;
+    margin: 10px 8% 10px 2%;
+    border-radius: 10px;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.08));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/* User not login yet */
+
+ion-view.attendance.attendance-home .item.item-body.item-custom.attendance-login-button.remove-border {
+    background-color: transparent;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom:after {
+    content: "Login";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom {
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    font-size: 0;
+    width: 60%;
+    margin: 20px 20%;
+}
+
+
+/* PADLOCK */
+
+.padlock-view .card {
+    box-shadow: none;
+}
+
+.padlock-view {
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.padlock-view .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom h2 {
+    visibility: hidden;
+    font-size: 5px;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom {
+    padding: 0;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom h2:after {
+    visibility: visible;
+    content: "SekolahKu";
+    font-weight: bold;
+    font-size: 2rem !important;
+    width: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #9c4aff;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 40px 40px 0 0;
+    font-family: 'Poppins', Helvetica, sans-serif !important;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom h2:before {
+    visibility: visible;
+    content: "Welcome to";
+    font-weight: bold;
+    font-size: 2rem !important;
+    width: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #000;
+    padding: 0 !important;
+    background-color: transparent;
+    border-radius: 40px 40px 0 0;
+    font-family: 'Poppins', Helvetica, sans-serif !important;
+}
+
+.padlock-view .item.item-body.item-custom.text-center {
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/log-in-outline.svg) !important;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: transparent;
+    border-radius: 0 0 40px 40px;
+}
+
+.padlock .item.item-body i {
+    font-size: 0px;
+}
+
+.padlock-view .icon.ion-ios-paper-outline,
+.padlock-view .icon.ion-ios-person-outline {
+    display: none;
+}
+
+.padlock-view div[ng-if="description"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Poppins", Helvetica, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.padlock-view div[ng-click="padlockLogin()"] {
+    visibility: hidden;
+}
+
+.padlock-view div[ng-click="padlockLogin()"]:after {
+    visibility: visible;
+    content: "Get Started";
+    display: block;
+    width: 80%;
+    background-color: #9c4aff !important;
+    border-radius: 10px !important;
+    margin: 10px 10% 50px 10% !important;
+    padding: 15px 10px !important;
+    text-align: center;
+    color: #fff !important;
+    font-size: 16px;
+    height: 52px;
+}
+
+.padlock-view .item-icon-left {
+    padding: 0;
+}
+
+
+/* MY ACCOUNT */
+
+
+/* LOGIN PAGE */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1):before {
+    content: "";
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/log-in-outline.svg) !important;
+    background-position: center;
+    height: 220px;
+    display: absolute;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin: 0;
+    display: block;
+    max-height: 100% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div {
+    background-color: transparent;
+    border-radius: 50px 50px 0 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div:before {
+    content: "Sign In";
+    margin: 10px 0 10px 0;
+    text-align: center;
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) label {
+    display: inline-block;
+    width: 90%;
+    background-color: transparent;
+    margin: 0 5%;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) label:nth-child(1):before {
+    content: "Email Address" !important;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #000 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) label:last-child:before {
+    content: "Password";
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #000 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) label input {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 0;
+    padding: 10px 5px !important;
+    text-align: left !important;
+    height: 50px;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8)) !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) label.item.item-input.item-custom input {
+    text-align: left;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll .icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll .icon.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div div.padding.text-right {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div div:nth-child(3) {
+    order: 4;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div div:nth-child(4) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1)>div button {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 0 5% 50px 5%;
+    border-radius: 10px;
+    background-color: #9c4aff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) .padding.text-center.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-center.ng-binding {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) .padding.text-center.ng-binding .bold.positive.positive-custom.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="displayLoginForm()"] span {
+    font-size: 16px;
+    color: #fff;
+    visibility: hidden;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="displayLoginForm()"] span:before {
+    font-size: 14px;
+    color: #9c4aff;
+    visibility: visible;
+    content: "Sign In";
+    text-align: center;
+    display: block;
+}
+
+
+/* hide request access to my personal data */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="requestGdprToken()"] {
+    display: none !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(1) .padding.text-center.ng-binding .bold.positive.positive-custom.ng-binding:before {
+    font-size: 14px;
+    color: #9c4aff;
+    visibility: visible;
+    content: "Register";
+    text-align: center;
+}
+
+
+/* REGISTER PAGE */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div.item.item-input.item-custom,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label {
+    display: inline-block;
+    width: 90%;
+    padding-left: 0;
+    background-color: transparent !important;
+    margin: 0 5% !important;
+    background: none !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div.input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div.input-label {
+    display: block;
+    width: 100vw !important;
+    font-size: 12px;
+    color: #000;
+    padding: 0;
+    margin-right: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="showPrivacyPolicy()"] {
+    text-align: left;
+    display: flex;
+    padding: 0 20px 10px 20px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) input {
+    display: block;
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    background-color: #fff;
+    padding: 10px 5px !important;
+    height: 45px;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-checkbox .item-content span {
+    font-size: 11px;
+    padding-left: 50px;
+    color: #2a2a2a;
+    visibility: hidden;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-checkbox .item-content span:last-child:after {
+    font-size: 11px;
+    padding-left: 50px;
+    content: "Persyaratan Layanan";
+    display: block;
+    width: 100%;
+    color: #2a2a2a;
+    visibility: visible;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) button {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 0 5% 50px 5%;
+    border-radius: 10px;
+    background-color: #9c4aff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div.list:before {
+    content: "Let's Sign Up.";
+    margin: 16px 0 17px 0;
+    text-align: center;
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list {
+    padding-top: 0;
+    background-color: transparent;
+}
+
+.customer-layout1 .customer-image {
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: 0 !important;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: auto;
+}
+
+.input-label.ng-binding {
+    font-size: 16px !important;
+    width: 100% !important;
+    min-width: 100%;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: transparent !important;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent !important;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: transparent !important;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent !important;
+}
+
+
+/* MY ACCOUNT SETTING */
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item-divider.item-divider-custom,
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    background-color: transparent;
+    color: #000;
+    border: 0;
+}
+
+
+/* MY ACCOUNT SETTING */
+
+
+/* ATTENDANCE */
+
+ion-view.attendance.attendance-home ion-content,
+ion-view.attendance.attendance-message ion-content {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    top: 0 !important;
+    padding-top: 60px;
+    background-image: url(https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ATTENDANCE */
+
+
+/* CALENDAR */
+
+ion-view.event-view ion-content .list .item-divider.item-divider-custom,
+ion-view.event-view ion-content .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.event-view ion-content h2.ng-binding,
+ion-view.event-view ion-content p {
+    color: #000 !important;
+}
+
+ion-view.event-view ion-content .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    background: transparent;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+ion-view.event-view ion-content .item.item-image,
+ion-view.event-view ion-content .item.item-image img {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+}
+
+ion-view.event-view ion-content,
+ion-view.padlock-view ion-content,
+ion-modal-view.privacy-policy-view ion-content,
+ion-modal-view.customer-view.customer-layout1 ion-content,
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background-image: none !important;
+    padding-top: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8)) !important;
+    margin-top: 68px !important;
+    border-radius: 30px 30px 0 0 !important;
+}
+
+ion-view.event-view,
+ion-view.padlock-view,
+ion-modal-view.privacy-policy-view,
+ion-modal-view.customer-view.customer-layout1,
+ion-view.module-push.push-list.push-list-l1 {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    top: 0 !important;
+    padding-top: 60px;
+    background-image: url(https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.event-view ion-content .list {
+    width: 96%;
+    margin: 15px 2%;
+    border-radius: 10px !important;
+    padding: 10px;
+    background-color: #fff;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+}
+
+
+/* END CALENDAR */
+
+
+/* NOTIFICATION */
+
+ion-view.module-push.push-list.push-list-l1 ion-content .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    width: 96%;
+    margin: 15px 2%;
+    border-radius: 10px !important;
+    background-color: #fff;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+}
+
+ion-view.module-push.push-list.push-list-l1 .assertive,
+ion-view.module-push.push-list.push-list-l1 a.assertive {
+    color: #ef473a;
+    background-color: #fff;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.text-no-wrap.ng-binding,
+ion-view.module-push.push-list.push-list-l1 span.ng-binding {
+    color: #000 !important;
+}
+
+
+/* NOTIFICATION */
+
+
+/* PRIIVACY POLICY PAGE */
+
+ion-modal-view.privacy-policy-view ion-content .item-text-custom {
+    border: 0;
+    background-color: transparent;
+}
+
+ion-modal-view.privacy-policy-view .padding {
+    padding: 5px !important;
+}
+
+
+/* END PRIIVACY POLICY PAGE */

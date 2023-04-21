@@ -1,0 +1,117 @@
+/* Layout 3 Horizontal */
+
+
+/* Hal-hal yang perlu disesuaikan:
+
+Menggunakan Layout Layout 3 Horizontal
+Setingan layout pada tab Design: Display the homepage slider: YES; Colorize pager: No
+Bagian Homepage slider options: Loop over images: YES; Slideshow duration: 2 second; Top position: 2; Images opacity: 100%; Images height: 30%;
+Ganti link gambar yang ada pada baris kode div#homepage_slider:before sesuai dengan kebutuhan.
+Selanjutnya, tempatkan CSS di bawah ini di bagian Advanced Customization CSS / SCSS tab Colors editor builder Anda.
+
+ */
+
+
+/* Home background */
+
+ion-view.pane.has-background-image {
+    background: #fff !important;
+}
+
+div#homepage_slider:before {
+    content: " ";
+    display: block;
+    background-image: url(https://www.medion.co.id/wp-content/uploads/2022/01/cropped-cropped-cropped-logo-resize-6-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45px !important;
+    margin-top: 3vh !important;
+}
+
+.layout.l11 .slider {
+    height: calc(300px + var(--safe-area-inset-bottom));
+}
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 96%;
+    margin: 5vh 2% 0 2% !important;
+    border-radius: 10px;
+    height: 35vh !important;
+}
+
+.slider-pager .slider-pager-page.active {
+    -webkit-transition: opacity .4s ease-in;
+    transition: opacity .4s ease-in;
+    opacity: 1;
+    display: inline-block;
+    margin: 0 3px;
+    width: 25px;
+    text-decoration: none;
+    height: 10px !important;
+    background-color: #8ca0bd;
+    color: transparent;
+    border-radius: 10px;
+}
+
+.layout .slider-pager {
+    height: calc(20px + var(--safe-area-inset-bottom)) !important;
+    bottom: 0;
+    background-color: transparent;
+    padding-bottom: var(--safe-area-inset-bottom);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-pager .slider-pager-page {
+    display: inline-block;
+    margin: 0 3px;
+    width: 20px;
+    text-decoration: none;
+    opacity: .3;
+    height: 10px !important;
+    background-color: #000;
+    color: transparent;
+    border-radius: 10px;
+}
+
+.layout.l11 .slider-slides a {
+    position: relative;
+    width: 28%;
+    margin: 0 2% 15px 3%;
+    background-color: #8ca0bd;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-flex;
+    height: 120px !important;
+    top: 0 !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout.l11 a .items {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.layout.l11 a p {
+    text-transform: uppercase;
+    line-height: 20px;
+    height: auto !important;
+    overflow: visible !important;
+    color: #fff !important;
+    white-space: normal !important;
+    margin: 0;
+}

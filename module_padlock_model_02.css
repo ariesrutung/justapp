@@ -1,0 +1,90 @@
+/* Modifikasi Padlock
+
+
+Silakan ikuti video di bawah ini untuk memodifikasi padlock sesuai dengan gambar. */
+
+ion-view.padlock-view ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin-top: 10px;
+}
+
+ion-view.padlock-view .card {
+    box-shadow: none;
+}
+
+ion-view.padlock-view div.item.item-text-wrap.item-custom:first-child {
+    visibility: hidden;
+}
+
+ion-view.padlock-view div.item.item-text-wrap.item-custom:first-child:after {
+    content: "TOKO SAYUR";
+    color: #000 !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+    visibility: visible;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ion-view.padlock-view .item.item-body.item-custom.text-center {
+    background-image: url("https://justapp.id/wp-content/uploads/2020/07/logo-1.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    height: 120px;
+}
+
+ion-view.padlock-view .item.item-body.item-custom.text-center i {
+    font-size: 0;
+}
+
+ion-view.padlock-view div.item.item-icon-left.item-custom:first-child {
+    background-color: #176889;
+    color: #fff;
+    border-radius: 20px !important;
+    margin-top: 50px;
+}
+
+.ion-ios-paper-outline::before {
+    display: none !important;
+}
+
+ion-view.padlock-view div.item.item-icon-left.item-custom:first-child span {
+    width: 100%;
+    margin: 0;
+    display: block;
+    margin-left: -10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ion-view.padlock-view [ng-click="padlockLogin()"] {
+    visibility: hidden;
+}
+
+ion-view.padlock-view [ng-click="padlockLogin()"]:after {
+    visibility: visible;
+    content: "LOGIN OR SIGNUP";
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: 20px 20% 0 20%;
+    ;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #176889;
+    color: #fff;
+    border-radius: 20px !important;
+    padding: 15px 5px;
+}
+
+ion-view.padlock-view .item.item-icon-left.item-custom.ng-binding {
+    padding: 0 !important;
+    margin-top: 30px;
+}
+
+Kopi script di atas dan tempatkan ke menu Color - Advanced Customization CSS/SCSS pada editor JustApp.

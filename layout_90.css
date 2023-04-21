@@ -1,0 +1,155 @@
+/* Layout 90 */
+
+
+/* Catatan untuk diikuti:
+
+Menggunakan Layout 90.
+Sesuaikan gambar slider pada bagian Layout Option tab Design.
+Sesuaikan gambar yang digunakan pada baris kode .layout.l90 .sidenav ul.items:before sesuai dengan kebutuhan.
+Kopi dan tempatkan CSS di bawah ini ke tab Colors bagian Advanced Customization CSS/SCSS. */
+
+.layout.l90 #main .row {
+    background-color: transparent;
+}
+
+.layout.l90 .slider {
+    height: 100% !important;
+    top: 0;
+}
+
+.layout.l90 #main p.title {
+    font-size: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.layout.l90 #main .slider-pager .slider-pager-page.active {
+    -webkit-transition: opacity .4s ease-in;
+    transition: opacity .4s ease-in;
+    opacity: 1;
+    display: inline-block;
+    margin: 0 3px;
+    width: 25px;
+    text-decoration: none;
+    height: 10px !important;
+    background-color: #8ca0bd;
+    color: transparent;
+    border-radius: 10px;
+}
+
+.layout.l90 #main .slider-pager {
+    height: calc(20px + var(--safe-area-inset-bottom)) !important;
+    bottom: 0;
+    background-color: transparent;
+    padding-bottom: var(--safe-area-inset-bottom);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.layout.l90 #main .slider-pager .slider-pager-page {
+    display: inline-block;
+    margin: 0 3px;
+    width: 20px;
+    text-decoration: none;
+    opacity: .3;
+    height: 10px !important;
+    background-color: #000;
+    color: transparent;
+    border-radius: 10px;
+}
+
+.layout.l90 #main .slider-pager i.icon.ion-record {
+    color: transparent;
+}
+
+.layout.l90 #main .navbtn i.icon.ion-navicon-round {
+    background-image: url(https://justapp.id/assets/images/toggler_icon_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.layout.l90 #main .row li.col.col-20 {
+    position: relative;
+    z-index: 999;
+}
+
+.layout.l90 .sidenav ul.items li {
+    display: inline-block;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 70px;
+    padding: 10px 5px;
+    color: #000;
+    min-width: 46%;
+    width: 46%;
+    max-width: 46%;
+    margin: 9px 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0, 0, 0.1), 0 2px 4px -1px rgb(0, 0, 0, 0.6);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 90%, rgba(0, 212, 255, 0.25) 90%);
+    background-repeat: no-repeat;
+}
+
+.layout.l90 .sidenav ul.items li p {
+    font-size: 13px;
+    margin: 0 0 0 10px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+
+.layout.l90 .sidenav .homepage-custom {
+    background: #eee !important;
+    width: 100%;
+}
+
+.layout.l90 .sidenav ul.items:before {
+    content: " ";
+    height: 150px !important;
+    display: block;
+    background-image: url(https://uhelp.spruko.com/uhelp/uploads/callaction/image/callaction.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 25px;
+}
+
+.layout.l90 .sidenav li img {
+    width: 20%;
+    height: auto;
+    max-height: 100%;
+    filter: invert(1);
+    margin: 0 40% !important;
+}
+
+.layout.l90 .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
+    font-size: 36px;
+    margin: 0;
+    text-align: right;
+    width: 70px;
+    height: 70px;
+    border-radius: 0 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(86, 170, 89, 0.25);
+}
+
+.layout.l90 .sidenav .closebtn i.icon.ion-close-round {
+    color: #56aa59;
+    font-size: 25px;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important;
+}

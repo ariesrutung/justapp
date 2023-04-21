@@ -1,0 +1,39 @@
+Contoh di bawah ini adalah tiruan untuk tampilan aplikasi Mobile JKN dari BPJS Kesehatan. Untuk panduan pembuatannya,
+silakan simak langkah-langkah di bawah ini. Tambahkan modul yang akan ditampilkan pada beranda atau modul-modul yang akan diisi ke dalam Folder v2. Pada contoh di atas menggunakan 15 buah modul. Jenis modul yang digunakan,
+silakan Anda sesuaikan dengan kabutuhan. Tambahkan modul Folder v2 ke dalam aplikasi Anda,
+lalu lakukan konfigurasi seperti berikut ini. Pada tab Folder - Manage Folder - Edit Folder,
+isi bagian Title dengan Hi dan isi Selamat Datang pada bagian Subtitle. Setingan lainnya biarkan default,
+alias tidak perlu diubah-ubah. Akhiri dengan menekan tombol Save. Masih di tab Folder - Manage Folders,
+gulung halaman ke bawah,
+perhatikan bagian Available features to add inside folders,
+klik modul-modul yang telah Anda tambahkan pada poin 1 di atas. Selanjutnya,
+masuk ke tab Design - pilih Layout 6. Akhiri dengan menekan tombol Save. Terakhir,
+masuk ke tab Setting - Manage Folder - centang Use card design. Opsi lainnya tidak perlu. Enam buah modul pada urutan pertama akan ditampilkan seperti tampilan default ketika Anda menambahkan modul ke dalam Folder v2 dan menggunakan Layout 6. Silakan perhatikan gambar! Tiga modul pada baris kedua akan ditampilkan dalam bentuk card slider. Jadi Anda dimungkinkan untuk menggulungnya ke kanan atau kiri. Untuk mendapat deskripsi di bawah judul modul,
+silakan buka masing-masing modul yang ada pada baris kedua,
+pada bagian Subtitle modul,
+silakan tambah deskripsi dari modul atau menu yang akan dirampilkan,
+sebagai contoh Lipsum adalah teks standar untuk mendemostrasikan elemen grafis. Sedangkan untuk gambar card,
+silakan tambahkan gambar seperti Anda menambahkan ikon untuk menu di aplikasi. Perhatikan gambar! Tiga modul pada baris ketiga akan dibuat seperti button tanpa gambar. Perhatikan gambar! Tiga modul pada baris keempat dan baris seterusnya akan ditampilkan dalam bentuk card slider. Untuk menambahkan deskripsi modul atau fitur,
+ulangi langkah 4 di atas. Catatan: Silakan ikuti panduan Ubah CSS secara mandiri jika paham alurnya. CSS untuk mengubah tampilan folder sebagaimana artikel ini,
+silakan cek di Member Area masing-masing. Bagian header pada contoh aplikasi ini sengaja dihilangkan. Jika Anda ingin mengembalikannya,
+temukan dan hapus baris kode di bawah ini.
+/* Header */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: transparent !important;
+    height: 0 !important;
+    background-image: none !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header .title {
+    color: transparent;
+}
+
+Selanjutnya,
+hapus properti padding: 20px !important;
+pada baris kode di bawah ini. ion-view[state="folder2-category-list"] ion-content {
+    background-color: #bddff2 !important;
+    padding: 20px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}

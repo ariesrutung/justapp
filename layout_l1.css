@@ -1,0 +1,164 @@
+/* Layout J1 */
+
+
+/* LAYOUT 1 */
+
+.has-footer-fixed ion-nav-view.nav-view-l1 ion-content {
+    bottom: 0;
+}
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+
+/* HOMEPAGE */
+
+.layout.l1 .tabs {
+    height: 65px !important;
+    box-shadow: none !important;
+    margin-bottom: 20px;
+    width: 70%;
+    border-radius: 30px;
+    margin-left: 15%;
+    background: rgb(23, 60, 101);
+    background: linear-gradient(90deg, rgba(23, 60, 101, 1) 0%, rgba(10, 38, 79, 1) 100%) !important;
+    padding: 0 !important;
+}
+
+.layout.l1 .tabs li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 !important;
+    height: 45px !important;
+    margin-top: 20px;
+}
+
+.layout.l1 .tabs li:nth-child(4) {
+    display: none;
+}
+
+.layout.l1 .tabs li p {
+    display: none;
+}
+
+.layout.l1 .tabs li img {
+    width: 25px;
+    height: 25px;
+    max-height: 80%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+/* MORE */
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+    background: linear-gradient(90deg, rgba(23, 60, 101, 1) 0%, rgba(10, 38, 79, 1) 100%) !important;
+    opacity: 1 !important;
+    height: 50vh;
+    margin-top: 50vh;
+    border-radius: 50px 50px 0 0;
+    padding: 0 !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic ion-content {
+    height: 400px;
+    background-image: url(https://company.toku.co/hubfs/Group%2037-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    color: #d0e0ea;
+    border-radius: 50px 50px 0 0;
+    background-color: #fff !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom h2 {
+    color: #fff;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(-n+3) {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(4) {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #fff;
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(4) img {
+    display: inline;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(4) h2 {
+    margin-left: 5px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) {
+    width: 23% !important;
+    display: inline-block;
+    max-width: 23%;
+    left: 0;
+    right: 0;
+    margin: 0 1%;
+    min-height: 80px;
+    background: #ffffff !important;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid #e6e6e6;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom {
+    margin-top: 60px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 0;
+    border: 2px solid #e6e6e6;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom i {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom h2 {
+    text-align: center !important;
+    text-transform: uppercase;
+    color: #0c2a53;
+    left: 0;
+    display: block !important;
+    width: 100%;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) img {
+    display: block;
+    width: 30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    margin: 5px auto;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) h2 {
+    width: 100% !important;
+    display: block;
+    margin-top: 25px;
+    color: #0c2a53;
+    text-align: center;
+    left: 0;
+    font-size: 12px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom {
+    background-color: transparent;
+}

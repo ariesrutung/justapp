@@ -1,0 +1,143 @@
+Silakan tambahkan modul Custom Page ke dalam aplikasi Anda. Selanjutnya, buka modul tersebut dan buat blok-blok sesuai dengan penomoran di bawah ini.
+
+1 - Source Code
+Isi blok pertama dengan Source Code. Frame height biarkan otomatis, tidak perlu diubah. Source code untuk blok pertama bisa Anda dapat di Member Area dengan nama Source Code HTML Aplikasi BakalHaji.
+
+2 - Text
+Tambahkan blok Text - Internal Link dan arahkan ke modul mana yang akan dituju ketika menu ini diklik. Link menuju modul lain di dalam aplikasi akan terlihat seperti berikut ini.
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list">Lokasi Ziarah</a></p>
+
+Selanjutnya, lakukan langkah yang sama untuk Text 3 sampai Text 9. Isi dengan link sesuai kebutuhan Anda.
+
+10 - Text
+Text yang ke-10 ini akan digunakan untuk membuat judul beserta link Lihat Semua untuk Text 11. Silakan buat sebuah judul dengan format H2 dan bold. Isi sesuai dengan kebutuhan. Sebagai contoh, judul dan link yang digunakan pada bagian ini akan terlihat seperti tampilan di bawah ini.
+
+<h2><strong>PERSIAPAN</strong></h2>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list">Semua</a></p>
+11 - Text
+Setelah membuat judul dan link pada Text 10, silakan isi kontennya pada Text 11. Text 11 ini akan ditransformasi menjadi card slider yang ketika diklik akan diarahkan ke modul lain. Sebagai contoh, slider ini akan dibuat sebanyak 6 card yang disertai judul dan subjudul. Linknya dapat dibuat menyerupai baris kode berikut ini.
+
+<p><a data-offline="false" data-params="value_id:193812" data-state="catalogpro-home"><strong>Slider A</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Slider B</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="false" data-params="value_id:193813" data-state="places-list-map"><strong>Slider C</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-categories"><strong>Slider D</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Slider E</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193480" data-state="folder2-category-list"><strong>Slider F</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+12 - Text
+Buat judul dan link persis seperti Text 10. Judul ini akan dipakai untuk slider pada Text 13. Sebagai contoh, baris kodenya akan terlihat seperti di bawah ini.
+
+<h2><strong>BEKAL</strong></h2>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list">Semua</a></p>
+13 - Text
+Ini merupakan konten untuk judul Text 12. Silakan isi persis seperti baris kode Text 11 sebanyak 6 link. Jangan lupa arahkan linknya ke modul yang akan dituju. Bagian ini akan diubah menjadi card slider. Baris kodenya bisa dilihat di bawah ini.
+
+<p><a data-offline="false" data-params="" data-state="home"><br />
+<strong>Home</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view"><br />
+<strong>Contact</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-form"><br />
+<strong>Form</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="false" data-params="value_id:191893" data-state="contact-map"><br />
+<strong>Map</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:192055" data-state="form2-home"><br />
+<strong>Form (v2)</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="" data-state="my-account"><br />
+<strong>My account</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+14 - Text
+Bagian ini akan diisi dengan judul dan link untuk Text 15, 16, dan 17. Lakukan langkah yang sama seperti pada Text 10 dan Text 12. Baris kode yang digunakan dapat dilihat di bawah ini.
+
+<h2><strong>LIST MENU</strong></h2>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list">Semua</a></p>
+15 - Text
+Text 15 ini adalah konten pertama untuk judul pada Text 14. Baris kodenya dapat dilihat di bawah ini.
+<p><a data-offline="true" data-params="value_id:193480" data-state="folder2-category-list"><strong>List Menu A</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+16 - Text
+Sama seperti Text 15, buat link seperti contoh di atas. Sebagai contoh, linknya seperti baris kode di bawah ini.
+<p><a data-offline="true" data-params="value_id:193480" data-state="folder2-category-list"><strong>List Menu B</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+17 - Text
+Lakukan hal yang sama untuk Text 17 seperti pada Text 15 dan 16.
+
+Catatan Penting:
+
+Jumlah blok yang digunakan harus sama, yakni 17.
+Jangan menambahkan gambar apapun pada masing-masing blok.
+Jangan menyisipkan blok lain di dalam blok sesuai petunjuk di atas.
+Silakan arahkan link di setiap baris kode di atas ke modul lain yang Anda gunakan di dalam aplikasi.
+Detail penggunaan dan arti baris kode yang digunakan tidak akan diulas secara mendalam.
+Mengganti gambar:
+
+Untuk mengganti gambar (masjid) yang dijadikan latar belakang pada bagian header aplikasi, silakan cari url http://farm1.static.flickr.com/3/3516116_65ab3c0f80_o.jpg. Ukuran gambar yang digunakan adalah 2000px*1331px. Gambar ini terletak pada baris CSS berikut:
+
+ion-view.module-cms.cms-l1 .card.no-shadow .item.item-custom {
+    padding: 0;
+    background-image: url(http://farm1.static.flickr.com/3/3516116_65ab3c0f80_o.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+Untuk mengganti gambar/icon yang digunakan pada menu Persiapan Haji hingga Lokasi Ziarah, silakan ubah gambar pada baris CSS berikut ini. Ukuran gambar yang digunakan adalah 512px * 512px.
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) div.content.ng-binding p {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    background-image: url(https://builder.justapp.id/images/application/12720/features/custom_page/193612/61fd46d2d5097.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 63px;
+    height: 80px;
+}
+CSS di atas hanya untuk mengganti gambar/icon pada menu Persiapan Haji. Yang perlu Anda perhatikan adalah selektor yang digunakan. Pada menu Persiapan Haji, selector yang dipakai adalah :nth-child(4), artinya menu tersebut berada di urutan ke-4. Untuk mengubah yang lain, silakan sesuaikan nilai selector yang digunakan secara berurutan, seperti Fiqih Umroh berada di selector :nth-child(5), Fiqih Haji berada di selector :nth-child(6), hingga Lokasi Ziarah yang berada di selector :nth-child(11).
+
+Untuk mengganti gambar latar belakang pada slider PERSIAPAN, silakan ubah url yang dipakai pada baris kode di bawah ini. Ukuran gambar yang dipakai adalah 355px * 260px.
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(13) .content.ng-binding p {
+    width: 45% !important;
+    min-width: 45% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 1%;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200713/pngtree-islamic-background-with-mosque-eid-al-adha-banner-cover-iwth-lantern-image_355402.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    background-color: #ece3c4 !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+Jika ingin mengubah gambar latar belakang yang dipakai pada slider BEKAL, silakan temukan baris code di bawah ini. Ukuran gambar yang dipakai adalah 355px * 260px.
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(15) .card .content.ng-binding p {
+    width: 50% !important;
+    min-width: 50% !important;
+    display: inline-block !important;
+    height: 131px;
+    margin: 0 1%;
+    background-image: url(https://andisites.com/wp-content/themes/x-andisites/images/s1.svg), linear-gradient(90deg, rgba(237,42,96,1) 3%, rgba(223,223,223,1) 3%) !important;
+    background: #e05553;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-color: #dfdfdf !important;
+    border-radius: 10px;
+    padding: 10px 10px 30px 20px;
+}
+Note: khusus untuk slider BEKAL, untuk menghilangkan garis merah di bagian kiri menu, silakan hapus warna gradasi yang dipakai di background-image, sehingga hanya menjadi seperti di bawah ini.
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(15) .card .content.ng-binding p {
+    width: 50% !important;
+    min-width: 50% !important;
+    display: inline-block !important;
+    height: 131px;
+    margin: 0 1%;
+    background-image: url(https://andisites.com/wp-content/themes/x-andisites/images/s1.svg) !important;
+    background: #e05553;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-color: #dfdfdf !important;
+    border-radius: 10px;
+    padding: 10px 10px 30px 20px;
+}

@@ -1,0 +1,2975 @@
+/* Bundle CSS Aplikasi ResApp - Resep Masakan */
+
+
+/* Ini adalah warna parameter */
+
+
+/* Untuk mengubah semua warna dan gambar di dalam aplikasi, Anda cukup mengubah parameter di bawah ini */
+
+
+/* Semua tentang warna ada di sini */
+
+$transparent-color: transparent;
+$card-bg-color: #282828;
+$bg-color: #212121;
+$yellow-color: #ffc20d;
+$white-color: #fff;
+$black-color: #000;
+$bg-input-field: #ecf0f6;
+$success-icon: url(https://justapp.id/member/halaman/unggah/article/67ec0fac7bc63f8ae3e38783ef77ee53resapp_check.png);
+
+/* icon sukses setelah berhasil belanja di menu commerce */
+
+$account-img: url(https://justapp.id/member/halaman/unggah/article/262a1bc879e9841a7122ce9f7010cf72resapp_cook.png);
+
+/* icon masak pada halaman padlock, login, dan forgot password */
+
+$bag-icon: url(https://justapp.id/member/halaman/unggah/article/aa4c0a80d8d0cacd733c719d606758dcresapp_bag.png);
+
+/* icon tas pada keranjang kosong dan produk pada keranjang */
+
+$history-icon: url(https://justapp.id/member/halaman/unggah/article/ef011a7fc1165d3c41e65381f411d701resapp_history.png);
+
+/* icon history belanja */
+
+$search-icon: url(https://justapp.id/member/halaman/unggah/article/960ea86b20394b3d54be63f036b2802cresapp_find.png);
+
+/* icon cari di commerce dan catalogpro */
+
+
+/* MODUL COMMERCE */
+
+
+/* Mengubah category2 menjadi grid atau card */
+
+ion-view[state="mcommerce-category-list"] ion-content .item.item-custom.item-thumbnail-left.item-center,
+ion-view[state="mcommerce-subcategory-list"] .item.item-custom.item-thumbnail-left {
+    padding: 0 5px 10px 5px;
+    width: 45%;
+    display: inline-block;
+    margin: 10px 2.5%;
+    min-height: 250px !important;
+    background-color: $card-bg-color;
+    border-radius: 20px;
+}
+
+
+/* Mengubah gambar thumbnail pada halaman category */
+
+ion-view[state="mcommerce-category-list"] ion-content .item.item-custom.item-thumbnail-left.item-center img {
+    object-fit: cover;
+    padding: 0 !important;
+    display: block;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 100px !important;
+    min-width: 200px !important;
+    min-height: 200px;
+    margin: -50px -50px 0 auto;
+}
+
+
+/* Gambar produk pada halaman produk */
+
+ion-view[state="mcommerce-subcategory-list"] .item.item-custom.item-thumbnail-left img {
+    object-fit: cover;
+    padding: 0 !important;
+    display: block;
+    left: 0;
+    right: 0;
+    width: 100px !important;
+    min-width: 100% !important;
+    min-height: 180px;
+    border-radius: 10px;
+    top: 0;
+}
+
+
+/* Nama produk pada halaman produk */
+
+ion-view[state="mcommerce-subcategory-list"] .item.item-custom.item-thumbnail-left h2 {
+    left: 0;
+    right: 0;
+    margin-top: 195px;
+    text-align: center;
+    background-color: $transparent-color;
+    min-height: 30px;
+    color: $white-color;
+    width: 98%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+/* Harga dan deskripsi pada produk */
+
+ion-view[state="mcommerce-subcategory-list"] p.three-lines.ng-binding {
+    text-align: center;
+    color: $yellow-color !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Halaman Detail produk */
+
+
+/* Card pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product .card {
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+
+/* Gambar produk pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product ion-slide.slider-slide img {
+    background-color: $white-color;
+    border-radius: 30px;
+    width: 90% !important;
+    margin-left: 5% !important;
+}
+
+
+/* Slider pager pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product span.slider-pager-page {
+    background-color: $yellow-color;
+    height: 10px;
+    border-radius: 30px;
+    width: 15px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-product span.slider-pager-page.active i,
+ion-view.mcommerce-view.mcommerce-product span.slider-pager-page i {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-product span.slider-pager-page.active {
+    width: 30px !important;
+    background-color: $yellow-color;
+    height: 10px;
+    border-radius: 30px;
+}
+
+
+/* Judul Produk pada halaman Detail Produk */
+
+ion-view.mcommerce-view.mcommerce-product .item.item-text-wrap.text-center.item-custom h2 {
+    color: $yellow-color;
+    text-transform: capitalize !important;
+}
+
+
+/* Background Judul Produk pada halaman Detail Produk */
+
+ion-view.mcommerce-view.mcommerce-product .item.item-text-wrap.text-center.item-custom,
+ion-view.mcommerce-view.mcommerce-product .card .item.item-custom {
+    background-color: $transparent-color;
+    border: 0;
+}
+
+
+/* Mengatur tulisan harga produk pada halaman harga produk */
+
+ion-view.mcommerce-view.mcommerce-product .card .item.item-body.item-custom span.ng-binding {
+    font-size: 18px;
+    color: $yellow-color;
+    font-weight: bold;
+}
+
+
+/* Mengganti tulisan price pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product label.item.item-input.item-select.item-custom .input-label.ng-binding {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-product label.item.item-input.item-select.item-custom .input-label.ng-binding:after {
+    content: "Pilih";
+    font-size: 14px;
+    color: $white-color;
+}
+
+ion-view.mcommerce-view.mcommerce-product .item-select select {
+    padding: 0 36px 0 0 !important;
+    max-width: 80% !important;
+}
+
+ion-view.mcommerce-view.mcommerce-product .input-label {
+    padding: 7px 0 !important;
+    max-width: 20% !important;
+    width: 20% !important;
+}
+
+
+/* Semua text warna putih pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product label div,
+ion-view.mcommerce-view.mcommerce-product label select,
+ion-view.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb div {
+    color: $white-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left.activated,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right.activated {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: $yellow-color;
+    border: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-product button.button.button-small.button-custom.button-left,
+ion-view.mcommerce-view.mcommerce-product button.button.button-small.button-custom.button-right {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: $yellow-color;
+    border: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-product .item-input-wrapper input,
+ion-view.mcommerce-view.mcommerce-cart .item-input-wrapper input {
+    color: $yellow-color !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-product i.icon.ion-ios-cart-outline {
+    font-size: 0;
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-product i.icon.ion-ios-cart-outline:after {
+    content: "Tambah Ke Troli";
+    font-size: 16px;
+    color: #000000;
+    margin-left: -24px;
+}
+
+ion-view.mcommerce-view.mcommerce-product [ng-click="addProduct()"] {
+    text-align: center;
+    color: #000!important;
+    background-color: $yellow-color !important;
+    width: 65%;
+    border-radius: 50px !important;
+    height: 40px;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5% !important;
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(2) {
+    padding-bottom: 50px !important;
+    display: flex;
+    margin-top: 20px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb {
+    width: 45%;
+}
+
+ion-view.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb {
+    background-color: $transparent-color;
+    padding: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+
+/* Deskripsi produk pada halaman Detail produk */
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(1) {
+    padding-bottom: 100px;
+}
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(1) .item.item-divider.item-divider-custom {
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(1) .item.item-divider.item-divider-custom h2.ng-binding i {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(1) .item.item-divider.item-divider-custom h2.ng-binding {
+    color: $yellow-color;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-product .card:nth-last-child(1) .item.item-body.item-custom.ng-binding p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $white-color;
+    margin-top: 0;
+}
+
+
+/* Menghilangkan icon price di depan harga produk pada halaman detail produk */
+
+ion-view.mcommerce-view.mcommerce-product .card .item.item-body.item-custom i.ion-pricetag {
+    display: none;
+}
+
+
+/* Mengubah judul category pada halaman kategory */
+
+ion-view[state="mcommerce-category-list"] ion-content .item.item-custom.item-thumbnail-left.item-center h2 {
+    left: 0;
+    right: 0;
+    margin-top: 75px;
+    text-align: left;
+    background-color: $transparent-color;
+    min-height: 30px;
+    color: $white-color;
+    width: 98%;
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .item.item-custom.item-thumbnail-left.item-center h2:after {
+    content: "Lihat Produk";
+    display: block !important;
+    width: 100%;
+    margin-top: 15px;
+    background-color: $yellow-color;
+    padding: 10px;
+    border: 0;
+    color: #000;
+    border-radius: 0 30px 30px 0 !important;
+    font-size: 12px;
+}
+
+ion-view[state="mcommerce-category-list"] .list .item.item-custom {
+    display: none;
+}
+
+ion-view[state="mcommerce-category-list"] label.item.item-input,
+ion-view[state="mcommerce-subcategory-list"] .list>div>label.item.item-input {
+    width: 96%;
+    margin: 20px 2%;
+    background-color: $transparent-color;
+    border: 0;
+    color: $white-color !important;
+    background-image: $search-icon;
+    background-position: center right 10px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+ion-view[state="mcommerce-category-list"] .list input#search {
+    color: $yellow-color;
+    font-size: 14px !important;
+}
+
+ion-view[state="mcommerce-category-list"] span.badge.badge-positive.badge-positive-custom.ng-binding {
+    border-radius: 5px;
+    background-color: $yellow-color !important;
+    color: $bg-color;
+    margin-left: 54px;
+}
+
+ion-view[state="mcommerce-subcategory-list"] .scroll>div:nth-child(3) {
+    margin-top: 20px;
+}
+
+ion-view[state="mcommerce-subcategory-list"] .scroll>div:nth-child(2) {
+    display: none !important;
+}
+
+
+/* DETAIL PRODUCT - CART VIEW */
+
+ion-view[state="commercepro-cart-view"] ion-content {
+    background-color: $white-color !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin-top: 5px !important;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content .card {
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .input-number-sb .input-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20%;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .ion-minus:before,
+ion-view.mcommerce-view.mcommerce-cart .ion-plus:before {
+    color: $white-color;
+    font-size: 16px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    width: 50% !important;
+    left: 0;
+    right: 0;
+    float: right;
+    height: 48px;
+    background-color: $bg-color;
+    color: $white-color;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom p {
+    font-weight: bold;
+    font-size: 16px;
+    color: $yellow-color;
+}
+
+.mcommerce-view.mcommerce-cart .icon.ion-clipboard:before,
+.mcommerce-view.mcommerce-cart .icon.ion-calculator:before,
+.mcommerce-view.mcommerce-product .icon.ion-ios-upload-outline {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
+    text-align: left;
+}
+
+
+/* Continue Shopping */
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) div.item.item-icon-left.item-custom.ng-binding:after {
+    content: "Lanjutkan Belanja";
+    font-size: 14px;
+    top: 0;
+    bottom: 0;
+}
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) div.item.item-icon-left.item-custom.ng-binding {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $yellow-color;
+    color: $bg-color;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 0;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) .ion-ios-arrow-back:before {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) .item.item-custom {
+    font-size: 16px;
+    color: $yellow-color;
+    font-weight: normal !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) .item.item-custom span.item-note {
+    font-size: 16px !important;
+    color: $yellow-color;
+    opacity: 1;
+}
+
+
+/* add gratuity (optional) */
+
+[state="mcommerce-cart-view"] div.item.item-custom.ng-binding:nth-child(6) {
+    display: none !important;
+}
+
+
+/* Commerce cart view */
+
+
+/* DETAIL PRODUCT - CART VIEW */
+
+ion-view.mcommerce-view.mcommerce-cart ion-content {
+    background-color: $bg-color !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .card:nth-child(1)>.item.item-custom:nth-child(1) p.ng-binding {
+    font-size: 16px !important;
+    text-align: center;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .card:nth-child(1)>.item.item-custom:nth-child(1) p.ng-binding:before {
+    content: " ";
+    display: block;
+    background-image: $bag-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card {
+    background-color: $card-bg-color;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    width: 96%;
+    box-shadow: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card p.ng-binding {
+    text-align: left;
+    font-size: 13px !important;
+    white-space: normal;
+    font-style: italic;
+    color: $white-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) {
+    background-color: $card-bg-color;
+    padding-top: 0;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content {
+    background-color: $white-color !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin-top: 5px !important;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content .card {
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .ion-trash-a:before {
+    color: $yellow-color;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    width: 50% !important;
+    left: 0;
+    right: 0;
+    float: right;
+    height: 48px;
+    background-color: $bg-color;
+    color: $white-color;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.mcommerce-view.mcommerce-cart .icon.ion-clipboard:before,
+.mcommerce-view.mcommerce-cart .icon.ion-calculator:before,
+.mcommerce-view.mcommerce-product .icon.ion-ios-upload-outline {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .card .item-divider.item-divider-custom,
+ion-view.mcommerce-view.mcommerce-cart ion-content .card .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $yellow-color;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content div.scroll div.card div.item.item-input.item-custom.input-number-sb {
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    background-color: $transparent-color;
+    padding: 0 0 10px 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content div.scroll div.card>div:nth-child(2) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content div.scroll div.card>div:nth-child(2) img {
+    border-radius: 5px;
+    background-color: $white-color;
+    max-width: 65px;
+    max-height: 65px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .card i.icon.ion-trash-a {
+    background-color: $bg-color;
+    right: 0 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:last-child {
+    background-color: $transparent-color;
+    background-image: none;
+    margin-top: 20px !important;
+}
+
+
+/* Choose a Store - Pilih Toko*/
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .list .item-radio.radio-custom {
+    color: $yellow-color;
+    background-color: $bg-color !important;
+    margin-bottom: 10px;
+    width: 94%;
+    margin-left: 3%;
+    height: 100px;
+    border-radius: 10px;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-content.disable-pointer-events span span[ng-if="store.min_amount && store.min_amount>0"] {
+    font-size: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-content.disable-pointer-events span span[ng-if="store.min_amount && store.min_amount>0"]:after {
+    content: "Minimum Orderan sebesar Rp. 50.000";
+    font-size: 14px !important;
+    padding-right: 50%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content span>span {
+    font-size: 12px;
+    font-weight: normal !important;
+    font-style: italic;
+    margin: 6px 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content span {
+    white-space: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* tanda centang pada halaman pilih toko */
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $white-color;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color !important;
+    color: $white-color;
+    border-radius: 5px;
+}
+
+
+/* ukuran tulisan pilih toko */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: $yellow-color;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+    padding: 10px !important;
+}
+
+
+/* Halaman Informasi Pembeli dan Alamat pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer label.item.item-input.item-custom {
+    background: $transparent-color !important;
+    display: block;
+}
+
+
+/* mengatur judul form */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-list.disable-user-behavior .list label .input-label.ng-binding {
+    width: 100% !important;
+    margin: 0 !important;
+    display: block !important;
+    max-width: 100% !important;
+    text-transform: capitalize;
+    color: $yellow-color;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $yellow-color !important;
+    border: 0;
+    display: none;
+}
+
+
+/* untuk bagian input */
+
+ion-view.mcommerce-view.mcommerce-sales-customer input {
+    width: 96%;
+    text-align: left;
+    border-bottom: 0;
+    padding: 10px;
+    height: 50px;
+    border-radius: 0;
+    color: $white-color !important;
+    font-size: 16px;
+    background-color: $card-bg-color !important;
+}
+
+
+/* Pilih Metode Pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    ;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom {
+    color: rgba(107, 170, 132, 1);
+    background-color: $transparent-color;
+    border: 0 !important;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    color: $white-color;
+    background-color: $transparent-color;
+}
+
+
+/* tanda centang pada halaman metode pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-error .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $white-color;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color;
+    color: #f2b80d;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+    padding: 20px 0;
+    text-align: left;
+    color: #f9bd0d;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-radio .item-content p {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-radio .item-content p.assertive.assertive-custom.ng-binding {
+    font-size: 14px;
+    font-style: italic;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p:first-child:after {
+    content: "Diantar Kurir";
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 1;
+    color: $white-color;
+    letter-spacing: 2px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p:first-child {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p.assertive.assertive-custom {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p.assertive.assertive-custom:after {
+    content: "Kamu tidak berada dalam radius pengiriman";
+    font-size: 14px;
+    white-space: normal;
+    font-style: italic;
+}
+
+
+/* Pilih Metode Pembayaran */
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label.radio-custom.item.item-radio.ng-not-empty.ng-valid:nth-child(3) {
+    height: 100px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label.radio-custom.item.item-radio.ng-not-empty.ng-valid:nth-child(3) .item-content.disable-pointer-events:after {
+    content: "Jangan lupa konfirmasi di menu KONFIRMASI";
+    display: block;
+    padding: 0;
+    line-height: 1.8;
+    font-style: italic;
+    color: $yellow-color;
+    margin-bottom: 30px;
+    white-space: normal;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .list:after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin: auto;
+    background-size: 70%;
+    display: block;
+    background-repeat: no-repeat;
+    top: 20px;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    ;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom {
+    color: $black-color !important;
+    background-color: $card-bg-color;
+    border: 0 !important;
+    margin-bottom: 10px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+    height: 70px;
+}
+
+
+/* tanda centang pada halaman metode pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-payment .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: $transparent-color;
+    color: $white-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $white-color;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color;
+    color: $yellow-color;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom {
+    color: $black-color !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 01% !important;
+    background-color: $card-bg-color !important;
+    display: block;
+    width: 98%;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .list .item-radio.radio-custom:nth-child {
+    color: $black-color;
+    background-color: $transparent-color;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 96%;
+    border: 2px solid $yellow-color !important;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .list {
+    width: 100%;
+}
+
+
+/* customer memilih pengantaran */
+
+div[ng-if="clients_calculate_change_form_is_visible"]:before {
+    content: "Total Order";
+    display: block;
+    height: 32px;
+    background-color: $bg-color;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div[ng-if="clients_calculate_change_form_is_visible"] {
+    background-color: $yellow-color;
+    width: 96%;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+div[ng-if="clients_calculate_change_form_is_visible"]:after {
+    content: "Biaya di atas sudah termasuk ongkir";
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px !important;
+    color: $button-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] div * {
+    text-align: left !important;
+    display: block;
+    background-color: $transparent-color !important;
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+    color: $bg-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item {
+    border: 0;
+    background-color: $transparent-color;
+    color: $yellow-color !important;
+    font-size: 18px !important;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row {
+    width: 100%;
+    display: inline-block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-65 {
+    max-width: 100% !important;
+    font-size: 16px;
+    width: 100% !important;
+    color: $white-color;
+    font-weight: normal !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-35,
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-35 input {
+    font-size: 18px !important;
+    color: $bg-color;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+
+/* Sales Confirmation */
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view[state="mcommerce-category-list"] .button-bar a.button.button-custom.icon-left.ion-clipboard.ng-binding {
+    background-color: $card-bg-color !important;
+    border: 0;
+    border-radius: 10px;
+    color: $yellow-color;
+    margin: 0 40px;
+    background-image: $history-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-size: 0;
+}
+
+ion-view[state="mcommerce-category-list"] .button-bar a.button.button-custom.icon-left.ion-ios-cart {
+    background-color: $card-bg-color !important;
+    border: 0;
+    border-radius: 10px;
+    color: $yellow-color;
+    margin: 0 40px;
+    background-image: $bag-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    font-size: 0;
+}
+
+ion-view[state="mcommerce-category-list"] a.button.button-custom.icon-left.ion-clipboard.ng-binding:before,
+ion-view[state="mcommerce-category-list"] a.button.button-custom.icon-left.ion-ios-cart:before {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card {
+    width: 96%;
+    margin-left: 2%;
+    background-color: $card-bg-color !important;
+    border-radius: 10px;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom {
+    background-color: $card-bg-color;
+    color: $black-color !important;
+    border: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom strong.ng-binding {
+    color: $white-color;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom strong.ng-binding i {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom p {
+    color: $white-color;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom img {
+    border-radius: 5px;
+    height: 65px !important;
+    min-height: 65px;
+    object-fit: cover;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(n+4) .item.item-custom.ng-binding {
+    width: 50% !important;
+    background-color: transparent !important;
+    padding: 10px 0 !important;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 20px 20px 0 0;
+    padding-top: 0 !important;
+    display: flex;
+    margin-top: -30px;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    justify-content: center;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom p strong {
+    color: $white-color;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom strong.ng-binding {
+    font-size: 18px;
+    color: $white-color !important;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom p strong {
+    color: $black-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(n+4) .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $white-color;
+    margin-bottom: -10px;
+    box-shadow: none !important;
+    padding-bottom: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom strong.ng-binding {
+    width: 45%;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom span,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom span strong.ng-binding {
+    width: 45%;
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom.ng-binding {
+    border: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item {
+    border: 0;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: $transparent-color;
+    padding: 0 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item.item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1) {
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 100px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item label textarea {
+    padding: 10px;
+    min-height: 120px;
+    border-radius: 10px;
+    margin: 10px 0;
+    line-height: 1.8;
+    background-color: $transparent-color;
+    border: 2px solid $yellow-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item label {
+    border: 0;
+    background-color: $transparent-color;
+    padding: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) .item.item-custom span.item-note strong {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    font-style: italic;
+    color: $yellow-color !important;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) .item.item-divider.item-divider-custom p strong {
+    text-align: left !important;
+    display: block;
+    font-size: 14px;
+    color: $white-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) {
+    background-color: $transparent-color;
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) .item.item-custom,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) .item.item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    border: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) .item.item-custom p,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+3) .item.item-divider.item-divider-custom p {
+    color: $white-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) *,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) strong {
+    color: $white-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:nth-child(1) {
+    display: none;
+}
+
+div[ng-if="!cart.hide_paid_amount && cart.formatted_paid_amount && cart.formatted_delivery_amount_due"] {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation [ng-if="cart.textualDeliveryTime"].card ion-item.item-divider.item-divider-custom.item {
+    width: 45%;
+    display: inline-block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation [ng-if="cart.textualDeliveryTime"].card ion-item.item-custom.text-right.item.ng-binding {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    color: $white-color;
+}
+
+
+/* mengatur bagian review/ualasan - saya akan membayar*/
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child ion-item.item-divider.item-divider-custom.item {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child ion-item.item-custom.item .row {
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child .row .col-75 {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child .row .col-25 {
+    width: 100% !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) ion-item.item-custom.text-right.item.ng-binding {
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child ion-item.item-divider.item-divider-custom.item {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child ion-item.item-custom.item .row {
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child .row .col-75 {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child .row .col-25 {
+    width: 100% !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+}
+
+
+/* Halaman Order Success Setelah validasi */
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card {
+    background-image: $success-icon;
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-color: $bg-color;
+    height: 250px;
+    box-shadow: none;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card:before {
+    content: "Berhasil";
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding {
+    background-color: $transparent-color;
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding:after {
+    content: "Terima kasih telah berbelanja, kami akan memproses pesanan Anda secepatnya.";
+    display: block;
+    font-size: 16px;
+    padding-top: 80px;
+    text-align: center;
+    color: $yellow-color;
+    line-height: 1.8;
+    font-style: italic;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card i.icon.ion-checkmark-round {
+    display: none;
+}
+
+
+/* Halaman Riwayat Pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(3) {
+    margin-top: 10px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(2) {
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom {
+    border: 0;
+    width: 96%;
+    margin: 10px 2%;
+    background-color: $transparent-color;
+    border-bottom: 1px dashed $white-color;
+}
+
+
+/*text */
+
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom h2,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom strong,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom span,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom p {
+    color: $white-color !important;
+    font-weight: normal;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+
+/* icon */
+
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom i {
+    display: none;
+}
+
+
+/* Halaman Detail dari Riwayat Pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history-details ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details ion-content>.scroll:after {
+    content: " ";
+    display: block;
+    height: 50px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list {
+    background-color: $card-bg-color;
+    padding: 0 0 10px 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list {
+    background-color: $card-bg-color;
+    padding: 0 0 10px 5px;
+    margin: 10px;
+    border-radius: 0;
+    border: 7px dashed $bg-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-divider.item-divider-custom.item-custom:nth-child(n+2) strong {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px !important;
+    display: block;
+    color: $yellow-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $bg-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left h2.ng-binding {
+    margin-top: 15px;
+    color: $white-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left p {
+    color: $white-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left p.text-right strong {
+    margin-bottom: 10px !important;
+    display: block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.ng-binding {
+    border: 0;
+    background-color: $transparent-color;
+    color: $white-color;
+    white-space: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(-n+3),
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(4) {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) {
+    background-color: transparent !important;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) h2 strong {
+    color: $yellow-color;
+    font-size: 18px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details p.text-right {
+    padding: 0 10px 0 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details span.pull-right.ng-binding {
+    font-size: 18px;
+    font-weight: bold;
+    color: $yellow-color;
+    font-style: italic;
+}
+
+
+/* Kolom detail pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left {
+    border-bottom: 1px dashed $bg-color;
+    width: 96%;
+    margin-left: 2%;
+    border-left: 0;
+    border-right: 0;
+    font-weight: normal;
+    background-color: $transparent-color;
+    font-style: italic;
+    padding: 0;
+    white-space: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left strong {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left i.icon.ion-pricetag {
+    display: none;
+}
+
+
+/* Ending CSS untuk module Commerce */
+
+
+/* CATALOG */
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .remove-border {
+    padding: 0;
+    margin: 0;
+    background-color: $transparent-color;
+    color: $white-color;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content img.catalogpro-product-grid-img {
+    min-height: 158px;
+    height: 140px;
+    object-fit: cover;
+}
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .col-50 h2,
+ion-view.catalogpro.catalogpro-serach .col-50 h2,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .col-50 h2 {
+    color: $white-color;
+    white-space: normal;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .col-50,
+ion-view.catalogpro.catalogpro-serach .col-50,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .col-50 {
+    background-color: $card-bg-color;
+    margin: 10px 1%;
+    color: $white-color;
+    width: 48% !important;
+    max-width: 48% !important;
+    border-radius: 10px;
+}
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .col-50 img,
+ion-view.catalogpro.catalogpro-serach .col-50 img,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .col-50 img {
+    border-radius: 10px;
+}
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .col-50 p.product_short_description.ng-binding,
+ion-view.catalogpro.catalogpro-serach .col-50 p.product_short_description.ng-binding,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content p.product_short_description.ng-binding {
+    color: $yellow-color !important;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px !important;
+}
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .col-50 p.product_price.ng-binding,
+ion-view.catalogpro.catalogpro-serach .col-50 p.product_price.ng-binding,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content p.product_price.ng-binding {
+    display: none;
+}
+
+
+/* Favorit Produk */
+
+ion-view[state="catalogpro-products-favorites"] ion-content#catalogpro-content .remove-border {
+    padding: 0;
+    background-color: $transparent-color;
+}
+
+ion-view[state="catalogpro-products-favorites"] .remove-border .row {
+    padding: 0;
+}
+
+ion-view[state="catalogpro-products-favorites"] .remove-border .col-50 {
+    background-color: $card-bg-color;
+    border-radius: 20px;
+    width: 48% !important;
+    max-width: 48% !important;
+    margin: 10px 1%;
+    padding-bottom: 20px;
+}
+
+ion-view[state="catalogpro-products-favorites"] ion-content#catalogpro-content img.catalogpro-product-grid-img {
+    border-radius: 10px;
+    max-height: 160px;
+    object-fit: cover;
+    min-height: 160px !important;
+}
+
+ion-view[state="catalogpro-products-favorites"] ion-content#catalogpro-content h2.product_name.ng-binding {
+    font-size: 16px;
+    color: $white-color;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+ion-view[state="catalogpro-products-favorites"] ion-content#catalogpro-content p.product_short_description.ng-binding {
+    color: $yellow-color !important;
+    font-size: 12px;
+    margin-top: 10px !important;
+    font-weight: bold;
+}
+
+ion-view[state="catalogpro-products-favorites"] ion-content#catalogpro-content p.product_price.ng-binding {
+    display: none;
+}
+
+
+/* Akhir Favorit Produk */
+
+ion-view.catalogpro.catalogpro-home button[ng-click="homeProductFilterMenu()"],
+ion-view.catalogpro.catalogpro-products [ng-click="homeProductFilterMenu()"] {
+    position: fixed !important;
+    top: calc(90vh - 60px) !important;
+    right: 2vw !important;
+    border-radius: 10px !important;
+    border-width: 0 !important;
+    padding: 5px 12px 5px 12px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px $card-bg-color !important;
+    background-color: $yellow-color;
+    color: $bg-color;
+    font-size: 24px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders [ng-click="goToProductByCategory(category.id)"] {
+    padding-top: 12px !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders [ng-if="!payout.products.length && !is_loading"] p.text-center.ng-binding {
+    text-align: center;
+    color: $yellow-color;
+    font-size: 14px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.product-slider.remove-border {
+    background-color: $transparent-color;
+    border: 0;
+    height: 250px;
+    object-fit: cover;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.product-slider.remove-border,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.remove-border,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom {
+    background-color: $transparent-color;
+    border: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.product-slider.remove-border *,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.remove-border *,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider *,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border *,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider *,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom * {
+    color: $white-color;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border p.ng-binding p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider h2,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border p.ng-binding h2 span strong,
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border p.ng-binding h2 strong span {
+    font-size: 18px;
+    font-weight: bold !important;
+    color: $yellow-color !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.remove-border h2.ng-binding {
+    font-size: 20px;
+    font-style: italic;
+    color: $yellow-color;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders span.product_price.pull-right.ng-binding {
+    display: none;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border {
+    padding-top: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(1) {
+    order: 1;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(2) {
+    order: 2;
+    padding-bottom: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(3) {
+    order: 4;
+    padding-top: 35px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(4) {
+    order: 5;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(5) {
+    order: 6;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(6) {
+    order: 3;
+    padding-top: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(6) i.icon.icon-active-custom.ion-ios-star {
+    color: $yellow-color !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(n+7) {
+    order: 7;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(n+7) .ion-star-col i.icon.icon-active-custom.ion-ios-star {
+    color: $yellow-color !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(n+7) p.ng-binding {
+    white-space: normal !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list>div:nth-child(n+7) p.text-right.ng-binding {
+    color: $yellow-color !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border p.ng-binding p a {
+    border: 0;
+    background-color: $yellow-color;
+    color: $bg-color !important;
+    font-size: 16px;
+    margin-left: 2%;
+    border-radius: 0 0 0 30px;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 150px;
+    top: 11px;
+    right: 11px;
+    box-shadow: 5px 5px 5px #212120 !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .button.button-positive-custom {
+    border: 0;
+    background-color: $yellow-color;
+    color: $bg-color !important;
+    border-radius: 30pc;
+    padding: 5px 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders span.icon.icon-active-custom.pull-right.product-favorite i {
+    color: red;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders iframe {
+    border-radius: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .resep p:first-letter {
+    font-size: 20px;
+    background-color: $yellow-color;
+    width: 30px !important;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50px;
+    color: $bg-color;
+    padding: 0 10px;
+}
+
+
+/* Rate produk page  */
+
+ion-modal-view.catalogpro.catalogpro-reating-review .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+}
+
+
+/*Halaman pencarian*/
+
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content .remove-border {
+    border: 0;
+    background-color: $transparent-color;
+    padding: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review i.icon.icon-active-custom.ion-ios-star {
+    color: $yellow-color !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review .list label span.input-label.ng-binding {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    padding: 10px 0;
+    color: $yellow-color;
+    font-size: 16px;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review label textarea {
+    height: 150px;
+    border: 2px solid $yellow-color;
+    line-height: 1.8;
+    color: $yellow-color !important;
+    font-size: 14px;
+    padding: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review .button.button-positive-custom {
+    border: 0;
+    background-color: $yellow-color;
+    color: $bg-color !important;
+    font-size: 16px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 30px;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Filter */
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-divider.item-divider-custom.ng-binding {
+    color: $yellow-color;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-avatar.item-icon-right.categories-list i.icon.ion-chevron-right {
+    color: $yellow-color !important;
+    opacity: 1;
+}
+
+
+/* Search Page */
+
+ion-view.catalogpro.catalogpro-serach ion-content#catalogpro-content {
+    margin-top: 15px;
+    top: 0 !important;
+    padding-top: 60px !important;
+}
+
+ion-view.catalogpro.catalogpro-serach .list.list-inset.home-serach-list a.item.item-input.item-button-right {
+    width: 96%;
+    margin-left: 2%;
+    background-color: $transparent-color;
+    border: 0;
+    color: $white-color !important;
+    margin-bottom: 20px;
+    background-image: $search-icon;
+    background-position: center right 10px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+ion-view.catalogpro.catalogpro-serach .list.list-inset.home-serach-list {
+    width: 100%;
+    background-color: $transparent-color;
+    height: 50px;
+}
+
+ion-view.catalogpro.catalogpro-serach .list.list-inset.home-serach-list i.icon.ion-search.placeholder-icon {
+    display: none;
+}
+
+ion-view.catalogpro.catalogpro-serach input#productSearch {
+    color: $yellow-color;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+}
+
+ion-view.catalogpro.catalogpro-serach ion-content#catalogpro-content .list .item.item-custom.remove-border {
+    background-color: $transparent-color;
+    margin-top: 70px;
+    color: $white-color !important;
+}
+
+ion-view.catalogpro.catalogpro-serach ion-content#catalogpro-content .list .item.item-custom.remove-border p.text-center.ng-binding {
+    color: $yellow-color !important;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/* Catalog produk image preview  */
+
+ion-modal-view.zoom-view ion-header-bar.bar.bar-header {
+    background-color: $bg-color !important;
+    border: 0 !important;
+    background-image: none;
+    color: $white-color !important;
+}
+
+ion-modal-view.zoom-view button.button.button-clear.button-dark {
+    background-color: $yellow-color;
+    width: 20%;
+    margin-right: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.zoom-view ion-scroll img {
+    border-radius: 10px !important;
+    padding: 0 !important;
+}
+
+
+/*AKHIR MODUL CATALOGPRO*/
+
+
+/* NewsWall */
+
+ion-view[state="newswall-list"] .l5 .row.list .col.col-50 .item.item-custom.item-body {
+    background-color: $card-bg-color;
+    border-radius: 20px;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+ion-view[state="newswall-list"] .l5 .row.list .col.col-50 .item.item-custom.item-body .item-image {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+ion-view[state="newswall-list"] .l5 .row.list .col.col-50 .item.item-custom.item-body .item-content {
+    height: 150px !important;
+    overflow: hidden !important;
+    padding: 0 5px;
+}
+
+ion-view[state="newswall-list"] .l5 .row.list .col.col-50 .item.item-custom.item-body h2.ng-binding {
+    line-height: 1.5;
+    font-size: 16px !important;
+    color: $white-color !important;
+}
+
+ion-view[state="newswall-list"] .l5 .row.list .col.col-50 .item.item-custom.item-body p.ng-binding {
+    font-size: 12px;
+    color: $yellow-color !important;
+}
+
+ion-view[state="newswall-list"] .l5 .row.list:last-child {
+    padding-bottom: 100px;
+}
+
+
+/* NewsWall View */
+
+ion-view[state="newswall-view"] .list.card:nth-child(1) {
+    margin: 0;
+    background-color: $transparent-color;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(n+1) {
+    background-color: $transparent-color !important;
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(1) {
+    order: 4;
+    background-color: $transparent-color !important;
+    color: $white-color;
+    line-height: 1.8;
+    padding: 0px;
+    bottom: 0;
+    top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(n+2) {
+    order: 3;
+    background-color: $transparent-color !important;
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(3) {
+    order: 2;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: $yellow-color !important;
+    border-radius: 10px 0 30px 0 !important;
+    color: $bg-color !important;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px $card-bg-color !important;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(3) span {
+    font-style: italic;
+    color: $bg-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(3) i {
+    display: none;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(4) {
+    order: 1;
+    background-color: $transparent-color !important;
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(n+5) {
+    order: 5;
+    background-color: $transparent-color !important;
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(n+1) img {
+    border-radius: 10px;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(n+1) * {
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(1) h2.ng-binding,
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div:nth-child(1) img {
+    display: none;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div[ng-click="login()"] {
+    background-color: $yellow-color !important;
+    width: 70%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg-color;
+    padding: 10px;
+    box-shadow: none !important;
+    margin-left: 15%;
+}
+
+ion-view[state="newswall-view"] .list.card:nth-child(1)>div[ng-click="login()"] i {
+    display: none;
+}
+
+ion-view[state="newswall-view"] .item.item-text-wrap.item-custom.ng-binding p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+ion-view[state="newswall-view"] .item.item-text-wrap.item-custom.ng-binding h3:first-letter {
+    font-size: 18px !important;
+    color: $bg-color !important;
+    background-color: $yellow-color !important;
+    padding: 5px 13px;
+    border-radius: 50px;
+}
+
+ion-view[state="newswall-view"] .item.item-text-wrap.item-custom.ng-binding h3 strong {
+    color: $yellow-color !important;
+}
+
+ion-view[state="newswall-view"] .item.item-text-wrap.item-custom.ng-binding h3 {
+    margin-top: 50px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: $yellow-color !important;
+}
+
+ion-view[state="newswall-view"] .item.item-avatar.item-button-right.item-custom p[ng-if="item.title"] {
+    display: block;
+    white-space: normal;
+    font-size: 18px;
+    color: $yellow-color !important;
+    font-weight: bold;
+    margin-left: 13px;
+    line-height: 1.6;
+}
+
+
+/* NewsWall Comment List */
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-divider.item-divider-custom.ng-binding {
+    display: none;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-text-wrap.item-button-right.item-custom.item-avatar {
+    background-color: $card-bg-color;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-text-wrap.item-button-right.item-custom.item-avatar h2.ng-binding {
+    color: $yellow-color;
+    font-size: 16px;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-text-wrap.item-button-right.item-custom.item-avatar p.justify.ng-binding {
+    color: $white-color;
+    line-height: 1.8;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-text-wrap.item-custom.ng-binding {
+    background-color: $transparent-color;
+    text-align: center;
+    color: $yellow-color;
+}
+
+
+/* End of NewsWall Comment List */
+
+
+/* NewsWall Write Comment Page*/
+
+ion-view[state="newswall-comment"] ion-content {
+    background-color: $bg-color !important;
+}
+
+ion-view[state="newswall-comment"] .list label.item.item-input.item-custom {
+    background-color: $transparent-color;
+    color: $white-color !important;
+    padding: 10px;
+}
+
+ion-view[state="newswall-comment"] .list label.item.item-input.item-custom textarea {
+    border: 2px solid $yellow-color;
+    color: $white-color !important;
+    line-height: 1.8;
+    padding: 10px;
+}
+
+ion-view[state="newswall-comment"] .scroll div:nth-child(2) {
+    background-color: $transparent-color !important;
+}
+
+ion-view[state="newswall-comment"] .button.button-custom {
+    border: 0;
+    background-color: $yellow-color;
+    color: $bg-color;
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/* NewsWall Write Comment Page*/
+
+
+/*AKHIR MODUL NEWSWALL*/
+
+
+/* Header */
+
+.bar.bar-custom .title {
+    display: none;
+}
+
+
+/* Akhir Header */
+
+
+/* Layout 1 */
+
+.layout .tabs {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 50px;
+    box-shadow: none !important;
+    background-color: $transparent-color;
+}
+
+.always .layout.l1 .tabs li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.always .layout.l1 .tabs li img {
+    margin-left: 0;
+}
+
+.always .layout.l1 .tabs li p.ng-binding {
+    display: none;
+}
+
+
+/* Akhir Layout 1 */
+
+
+/* PADLOCK */
+
+ion-view.padlock-view {
+    background-image: none !important;
+    background-color: $bg-color !important;
+}
+
+ion-view.padlock-view ion-content {
+    background-color: $bg-color !important;
+    top: 0 !important;
+    padding-top: 90px !important;
+    overflow: hidden;
+}
+
+ion-view.padlock-view .card {
+    box-shadow: none;
+    margin: 0 !important;
+    border: 0 !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view.padlock-view div.item.item-text-wrap.item-custom:first-child {
+    visibility: hidden;
+    padding-bottom: 0 !important;
+}
+
+ion-view.padlock-view .item.item-body.item-custom.text-center {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    background-color: $transparent-color !important;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+ion-view.padlock-view div.item.item-text-wrap.item-custom:first-child:after {
+    content: "ResApp";
+    color: $yellow-color !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+    visibility: visible;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+ion-view.padlock-view .card:before {
+    content: " ";
+    display: block;
+    background-image: $account-img;
+    background-color: $transparent-color !important;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-size: contain;
+    height: 150px;
+}
+
+ion-view.padlock-view .item.item-body.item-custom.text-center:after {
+    content: "Belajar masak sambil masak. Yuk, ada banyak resep yang bisa kamu coba.";
+    display: block;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $white-color;
+}
+
+ion-view.padlock-view .item.item-body.item-custom.text-center i {
+    font-size: 0;
+}
+
+ion-view.padlock-view div.item.item-icon-left.item-custom:first-child {
+    background-color: $bg-color;
+    color: $white-color;
+    margin-top: 10px;
+}
+
+.ion-ios-paper-outline::before {
+    display: none !important;
+}
+
+ion-view.padlock-view div.item.item-icon-left.item-custom:first-child span {
+    width: 100%;
+    margin: 0;
+    display: block;
+    margin-left: -10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ion-view.padlock-view [ng-click="padlockLogin()"] {
+    visibility: hidden;
+}
+
+ion-view.padlock-view [ng-click="padlockLogin()"]:after {
+    visibility: visible;
+    content: "Masuk";
+    text-align: center;
+    display: flex;
+    width: 50%;
+    margin: 0 25%;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: $yellow-color;
+    color: $black-color;
+    border-radius: 50px !important;
+    padding: 15px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.padlock-view .item.item-icon-left.item-custom.ng-binding {
+    padding: 0 !important;
+    margin-top: 30px;
+}
+
+
+/* Padlock */
+
+
+/* My Account */
+
+ion-modal-view.customer-view.customer-layout1 ion-header-bar.bar-custom.bar.bar-header {
+    background-color: $transparent-color !important;
+}
+
+
+/* login */
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]:before {
+    content: " ";
+    display: block;
+    background: $account-img;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $bg-input-field;
+    color: $black-color !important;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list:before {
+    content: "Login";
+    display: block;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: $yellow-color;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 i.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: $yellow-color !important;
+    color: $bg-color !important;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .padding.text-right span.bold.positive.positive-custom.ng-binding {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    padding: 0 !important;
+    margin: 5px;
+    color: $yellow-color;
+    font-weight: normal;
+    margin: 0 !important;
+    text-transform: capitalize;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"],
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] {
+    background-color: $transparent-color !important;
+    padding-top: 35px;
+    padding: 30px;
+    padding-top: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div div.padding.text-center.ng-binding span {
+    font-size: 0;
+    display: block;
+    padding: 0 !important;
+    color: $yellow-color;
+    font-weight: normal;
+    margin: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div div.padding.text-center.ng-binding span:after {
+    content: " Buat Akun";
+    font-weight: bold;
+    font-size: 14px;
+    color: $yellow-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(1) {
+    order: 1;
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(2) {
+    order: 2;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(3) {
+    order: 3;
+    padding: 0;
+    display: flex;
+    float: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(4) {
+    order: 5;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(5) {
+    order: 4;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+    color: $white-color;
+    font-weight: normal;
+    display: flex;
+    margin: 20px 0;
+}
+
+
+/* forgot password page */
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"]:before {
+    content: " ";
+    display: block;
+    background-image: $account-img;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(1) {
+    order: 1;
+    padding: 0 0 20px 0;
+    margin: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(1) p {
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(1) {
+    order: 1;
+    padding: 0 0 20px 0;
+    margin: 0 !important;
+    margin-top: 20px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(2) {
+    order: 2;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+    margin: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(3) {
+    order: 4;
+    padding: 0;
+    display: block;
+    margin-top: 40px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(4) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-left {
+    margin-top: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $bg-input-field;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding {
+    display: block;
+    text-align: left;
+    font-size: 14px !important;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: $yellow-color;
+    color: $bg-color;
+    font-size: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .button.button-positive-custom:after {
+    content: "Kirim";
+    font-size: 16px;
+    top: 0;
+    bottom: 0 !important;
+    color: $bg-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding span {
+    color: $yellow-color;
+    font-weight: normal;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding span:after {
+    content: " Masuk";
+    font-size: 14px;
+    font-weight: bold;
+    color: $yellow-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+    color: $yellow-color;
+}
+
+
+/* regist */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list.card {
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom {
+    border: 0;
+    color: $bg-color;
+    background-color: $bg-input-field;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom .input-label.ng-binding {
+    color: $bg-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: $yellow-color !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom {
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Kebijakan Privasi";
+    font-size: 14px;
+    color: $yellow-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 14px;
+    color: $yellow-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: $yellow-color;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: $bg-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: $yellow-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) span.bold.positive.positive-custom.ng-binding {
+    color: $yellow-color;
+    font-weight: normal;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox input:before,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: $yellow-color;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right {
+    padding: 0;
+    display: block !important;
+    text-align: left;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right [ng-click="showPrivacyPolicy()"],
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-center.ng-binding {
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-center.ng-binding {
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    color: $white-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="logout()"] {
+    width: 60%;
+    padding: 0;
+    border-radius: 10px;
+    display: block;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px !important;
+}
+
+[ng-click="customer.change_password = !customer.change_password"],
+[ng-click="customer.change_password = !customer.change_password; checkPasswordStatus()"] {
+    background-color: $transparent-color !important;
+    color: $yellow-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-square .checkbox-icon:after {
+    border-width: 2px;
+    top: 20%;
+    left: 30%;
+    width: 11px;
+    height: 7px;
+}
+
+
+/* account setting */
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] {
+    padding: 70px 0 !important;
+    background-color: $card-bg-color;
+    border-radius: 10px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list.card {
+    background-color: $transparent-color;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    border-radius: 0;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] ion-item.item-divider.item-divider-custom.item.ng-binding {
+    background: $transparent-color;
+    font-size: 16px;
+    padding: 17px;
+    font-weight: bold;
+    color: $yellow-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] label .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] label select,
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] input.text-right {
+    color: $white-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .item-checkbox .checkbox {
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* privacy policy */
+
+ion-modal-view.privacy-policy-view {
+    background-image: none !important;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: $bg-color !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.privacy-policy-view .item-text-custom {
+    border: 0;
+    background: $transparent-color;
+    padding-top: 75px;
+}
+
+ion-view.module-cms.cms-l1 ion-content,
+ion-view.sourcecode-view ion-content {
+    padding-top: 0 !important;
+}
+
+
+/* End Of My Account*/
+
+
+/* Push Notification */
+
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background: $transparent-color !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content .list .item.item-custom {
+    border: 0;
+    background-color: $card-bg-color;
+    color: $white-color !important;
+    margin: 10px !important;
+    border-radius: 10px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content ion-list.disable-user-behavior .list .card {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item.item-custom.item.item-avatar.item-avatar-square h2 {
+    color: $yellow-color !important;
+    font-size: 18px;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item p.text-no-wrap.ng-binding {
+    color: $white-color !important;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item span.super-click.assertive {
+    background-color: $yellow-color !important;
+    padding: 10px;
+    height: 30px;
+    width: 30px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item p.padding.text-right span span.ng-binding {
+    color: $yellow-color;
+    font-size: 14px;
+    font-style: italic;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item p.padding.text-right span i {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item span[ng-if="hasItem(item)"] {
+    margin-left: 35px;
+    background-color: $bg-input-field !important;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .card ion-item span[ng-if="hasItem(item)"] span.ng-binding {
+    color: $bg-color !important;
+}
+
+
+/* End of Push Notification */
+
+ion-view[class="pane has-background-image"] ion-content,
+ion-view.catalogpro.catalogpro-home ion-content,
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-content,
+ion-view.module-push.push-list.push-list-l1 ion-content,
+ion-view.mcommerce-view.mcommerce-product ion-content {
+    top: 0 !important;
+    padding-top: 60px;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+}

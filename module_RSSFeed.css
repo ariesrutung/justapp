@@ -1,0 +1,50 @@
+/* RSS FEED */
+
+ion-view.rss-list.rss-list-l1 .card {
+    margin: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+ion-view.rss-list.rss-list-l1 h2.rss-title.ng-binding {
+    white-space: normal !important;
+    margin-bottom: 20px;
+    border-left: 15px solid #2196f3;
+    padding-left: 6px;
+    color: #004276 !important;
+}
+
+ion-view.rss-list.rss-list-l1 p.rss-subtitle.ng-binding {
+    white-space: normal !important;
+    display: block !important;
+}
+
+ion-view.rss-list.rss-list-l1 p.rss-subtitle.ng-binding:after {
+    content: "Lihat";
+    display: block !important;
+    width: 30%;
+    margin-left: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2196f3;
+    text-align: center;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+ion-view.rss-view.rss-view-l1 .list.card {
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+ion-view.rss-view.rss-view-l1 .item.item-custom h2 {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: normal !important;
+    color: #2196f3 !important;
+    padding-top: 20px;
+}
+
+ion-view.rss-view.rss-view-l1 .ion-document-text:before {
+    color: #2196f3;
+}

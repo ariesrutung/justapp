@@ -1,0 +1,70 @@
+/* Mengubah Tampilan Layout 9
+Untuk memodifikasi layout 9 seperti gambar, kopi skrip di bawah ini dan tempatkan di menu Colors - Advanced Customization CSS/SCSS di editor Anda.
+
+Note: Pada gambar, modul yang ditempatkan pada posisi paling atas adalah My Account. Silakan sesuaikan dengan kebutuhan. Kemudian, di akhir setiap menu terdapat tulisan versi aplikasi yang digunakan, silakan Anda ubah di skrip CSS dengan kelas .layout.l9 ion-content ul.items.homepage-custom:after. */
+
+.layout.l9 ion-content.homepage-custom {
+    background-color: transparent !important;
+}
+
+.layout.l9 ion-content ul {
+    padding-top: 0;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0 !important;
+    height: 60px;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li:nth-child(1) {
+    margin-bottom: 10px;
+    background-color: #964aff;
+    height: 100px;
+    margin-left: 0;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li:nth-child(2) {
+    margin-top: 30px;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li:nth-child(1) img {
+    float: right;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom:after {
+    content: "Versi 3.0";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #449f47;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li:nth-child(1) p {
+    display: none;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li img {
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+
+.layout.l9 ion-content ul.items.homepage-custom li p {
+    display: block;
+    float: right;
+    text-align: left;
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 4px;
+    text-transform: uppercase;
+}

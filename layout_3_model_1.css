@@ -1,0 +1,318 @@
+/* Panduan:
+1. Gunakan Layout 3. Jangan lupa aktifkan dan tambah beberapa slider yang akan tampil di bagian header. Untuk penambahan slider, silakan cek di tab Design editor Anda.
+2. Pada gambar contoh di atas, menu yang digunakan sebanyak 15 buah. Delapan menu pertama dibuat menjadi kotak kecil, 4 menu berikutnya dibuat menyerupai card, dan bebrapa menu terakhir dibuat menyerupai card dengan background gelap.
+3. Video panduan penggunaan layout 3 dan menu dapat Anda simak di video di bawah ini. Vide ini tidak persis, tapi kurang lebih kegunaannya sama.
+Silakan kopi baris kode di bawah ini dan tempatkan di editor builder Anda. Ingat! Anda hanya diizinkan untuk mengubah kode hex warna parameter dan link gambar yang digunakan. Jika paham, Anda dapat mengubah yang lain sesuai kebutuhan. */
+
+
+/* Warna dan Gambar Parameter */
+
+$white-color: #fff;
+$yellow-color: #f5c634;
+$transparent-color: transparent;
+$grey-color: #ecf0f6;
+$blue-color: #387093;
+$black-color: #000;
+$icon-filter: url(https://justapp.id/member/halaman/unggah/article/552899bdce385b43cbd9a4945d3533b9filter.png);
+$clear-icon: url(https://justapp.id/member/halaman/unggah/article/875e18f369123ab4938e54ad15968fc9clearicon.png);
+$location-icon: url(https://justapp.id/member/halaman/unggah/article/1b085074c679766777acc53e171dddfclokasi_icon.png);
+$check-icon: url(https://image.flaticon.com/icons/png/512/845/845646.png);
+ion-view[state="home"] {
+    background-image: none !important;
+    background-color: $grey-color !important;
+}
+
+ion-view[state="home"]>ion-content:before {
+    content: " ";
+    display: block;
+    background-image: url(https://www.seimless.com/wp-content/uploads/2015/08/Header-Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 180px;
+    top: 0vh !important;
+    width: 100% !important;
+    background-color: $yellow-color;
+    position: absolute;
+    z-index: -999;
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+}
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 94% !important;
+    border-radius: 10px;
+    margin-left: 3%;
+    height: 25vh;
+    top: 11vh !important;
+    opacity: 1;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
+    position: absolute;
+    z-index: 999;
+    margin-top: 0 !important;
+}
+
+div#homepage_slider .slider-pager.hide {
+    display: inline !important;
+    top: 37vh;
+}
+
+div#homepage_slider span.slider-pager-page.active {
+    background-color: $yellow-color;
+    width: 30px;
+    font-size: 0;
+    padding: 0;
+    height: 10px;
+    max-height: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+div#homepage_slider span.slider-pager-page {
+    background-color: $blue-color;
+    width: 15px;
+    font-size: 0;
+    padding: 0;
+    height: 10px;
+    max-height: 10px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.layout.l3 ion-content {
+    position: absolute;
+    width: 100%;
+    height: 57%;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 0;
+    top: initial;
+}
+
+.layout.l3 ul {
+    padding-left: 0;
+    padding-top: 4px;
+}
+
+.layout.l3 li {
+    float: left;
+    width: 23%;
+    height: 100px;
+    margin: 5px 1%;
+}
+
+.layout.l3 ul li:nth-last-child(1):after {
+    content: ".";
+    padding-bottom: 100px;
+    display: block;
+    color: $white-color;
+}
+
+
+/* MENU KE-8 - 1 */
+
+.layout.l3 li:nth-child(-n+8) .item.homepage-custom.border-custom {
+    border-radius: 10px !important;
+    background-color: $white-color;
+    border: 0;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
+    width: 9vh;
+    height: 9vh;
+}
+
+.layout.l3 li p {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 11px;
+    color: $black-color;
+    text-transform: capitalize;
+    white-space: normal;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+/* MENU KE-9 - 12 */
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) {
+    border-radius: 10px !important;
+    background-color: $blue-color;
+    border: 0;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12):after {
+    content: "More";
+    background-color: $white-color;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    border: 0;
+    margin: 10px 0;
+    width: 43%;
+    clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+    color: $blue-color;
+    text-align: center;
+    justify-content: center;
+}
+
+.layout.l3 li:nth-child(9) {
+    background-image: url(https://i.imgur.com/AI0iA49.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(10) {
+    background-image: url(https://i.imgur.com/LjdrqUX.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(11) {
+    background-image: url(https://i.imgur.com/tq9Z1HP.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(12) {
+    background-image: url(https://i.imgur.com/BwX8Axe.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) .item.homepage-custom.border-custom {
+    display: none;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) p {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    height: 100%;
+    background-color: $white-color;
+    width: 60%;
+    border-radius: 10px;
+    top: 0 !important;
+    margin: 0 !important;
+    color: $blue-color !important;
+    border: 1px solid $grey-color;
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+/* text after p */
+
+.layout.l3 li:nth-child(9) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: $black-color;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(10) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: $blue-color;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(11) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: $blue-color;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(12) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: $blue-color;
+    margin: 15px 0;
+}
+
+
+/* MENU KE-13 dst. */
+
+.layout.l3 li:nth-child(n+13) {
+    border-radius: 10px !important;
+    background-color: $blue-color;
+    border: 0;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
+    float: left;
+    width: 96% !important;
+    height: 150px;
+    margin: 20px 2% 5px 2%;
+    background-image: url(https://s.tmimgcdn.com/scr/1200x750/198000/couple-cooking-illustration-concept-vector_198039-original.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.layout.l3 li:nth-child(n+13) .item.homepage-custom.border-custom {
+    display: none;
+}
+
+.layout.l3 li:nth-child(n+13) p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 10px;
+    top: 0 !important;
+    margin: 0 !important;
+    color: $white-color !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.layout.l3 li:nth-child(n+13) p:after {
+    content: "More";
+    display: block;
+    margin: 0;
+    background-color: $blue-color;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    color: $white-color;
+    font-weight: normal;
+    font-size: 12px;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}
